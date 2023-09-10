@@ -13,8 +13,7 @@ Link to project repository: https://github.com/Timdenders/Empyria
 
 Communication
 - Private: Penn State University – Microsoft Teams, Email, Canvas
-  - Throughout the course of this project’s development, the members of our team will actively communicate with each other about
-  - the design and production of the Empyria video game.
+  - Throughout the course of this project’s development, the members of our team will actively communicate with each other about the design and production of the Empyria video game.
 
 
 #### Product Description:
