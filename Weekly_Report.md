@@ -1,4 +1,4 @@
-# **Empyria Weekly Report**
+# **Civilization Strategy game (*Name Pending*) Weekly Report**
 ___
 
 #### Team Status Update:
