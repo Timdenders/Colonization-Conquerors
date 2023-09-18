@@ -6,8 +6,9 @@ An ongoing project aimed at developing a game that replicates the gameplay of th
 
 #### Team Members:
 - Timothy Enders (Game Programmer, Game Designer)
-- Grant Palmieri (Game Programmer, Gameplay Tester)
-- Joshua Murillo (Game Programmer, Sound Engineer)
+- Grant Palmieri (Game Programmer, Game Tester)
+- Joshua Murillo (Game Programmer, Audio Engineer)
+- Zachary Thomas (Game Programmer, Technical Writer)
 
 Link to project repository: https://github.com/Timdenders/Empyria
 
@@ -99,7 +100,10 @@ Group Roles
   - Gameplay Tester (evaluates the game's functionality and balance to ensure a smooth and enjoyable player experience)
 - Joshua Murillo
   - Game Programmer (responsible for coding and implementing the software and functionality of the game)
-  - Sound Engineer (specializes in creating and integrating audio elements, including music and sound effects, to enhance the overall auditory experience of the game)
+  - Audio Engineer (specializes in creating and integrating audio elements, including music and sound effects, to enhance the overall auditory experience of the game)
+- Zachary Thomas
+  - Game Programmer (responsible for coding and implementing the software and functionality of the game)
+  - Technical Writer (creates clear and comprehensive documentation, user manuals, and guides to help players understand and navigate the game effectively)
 
 Schedule 
 - To execute this project concept, our team will need to follow a series of sequential steps that will guide us toward the successful completion of Empyria. These steps encompass:
