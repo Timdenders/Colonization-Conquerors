@@ -97,7 +97,7 @@ Group Roles
   - Game Designer (responsible for conceptualizing the core gameplay elements, mechanics, and user experience)
 - Grant Palmieri
   - Game Programmer (responsible for coding and implementing the software and functionality of the game)
-  - Gameplay Tester (evaluates the game's functionality and balance to ensure a smooth and enjoyable player experience)
+  - Game Tester (evaluates the game's functionality and balance to ensure a smooth and enjoyable player experience)
 - Joshua Murillo
   - Game Programmer (responsible for coding and implementing the software and functionality of the game)
   - Audio Engineer (specializes in creating and integrating audio elements, including music and sound effects, to enhance the overall auditory experience of the game)
@@ -126,7 +126,7 @@ Schedule
 Major Risks
 - One significant risk involves succumbing to the allure of incorporating non-essential features, potentially diverting resources from core development efforts.
 - Another notable risk stems from our team's lack of prior experience working together, especially considering the project's scope; unforeseen challenges may arise.
-- Additionally, our chosen engine, although seemingly straightforward and suitable for the game, poses a risk as none of us have prior experience with it and as development progresses, unforeseen complexities may emerge.
+- Additionally, our chosen engine, although seemingly straightforward and suitable for the game, poses a risk as none of us have prior experience with it, and as development progresses, unforeseen complexities may emerge.
 
 External Feedback
 - We believe the optimal moment to seek external assistance is during the initial testing phase, as it allows for potential refinements if certain aspects do not resonate with the audience. The most effective approach to gathering this input is by involving external individuals to playtest the game and share their feedback and impressions.
