@@ -14,11 +14,11 @@ ___
 
 
 #### **Progress:**
-- **New name: Colonization Conquerors.**
+- **New name: Colonization Conquerors**
 - **Tool familiarity:**
     - Completed introductory 2D game tutorial.
         - Familiar with making projects/scripts and integrating nodes, picture assets, and code into a working game. 
-- **Bare bones game:**
+- **Bare-bones game:**
     - Tile gameboard.
     - The player has currency to buy objects.
     - The player can place objects on valid tiles of their choice.
