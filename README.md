@@ -115,10 +115,10 @@ Schedule
 | 9/24/23 - 9/30/23 | Continue Prototype Creation/Testing |
 | 10/1/23 - 10/7/23 | Redesign Game Implementation/Testing |
 | 10/8/23 - 10/14/23 | Begin Development Of Final Version |
-| 10/15/23 - 10/21/23 | Finalization Of Mechanics |
-| 10/22/23 - 10/28/23 | Finalization Of GUI |
-| 10/29/23 - 11/4/23 | Finalization Of In-Game Sprites |
-| 11/5/23 - 11/11/23 | Finalization Of Sound Design |
+| 10/15/23 - 10/21/23 | Finalization of Mechanics |
+| 10/22/23 - 10/28/23 | Finalization of GUI |
+| 10/29/23 - 11/4/23 | Finalization of In-Game Sprites |
+| 11/5/23 - 11/11/23 | Finalization of Sound Design |
 | 11/12/23 - 11/18/23 | Work On Extra Features (Leaderboards/Discord Integration) |
 | 11/26/23 - 12/2/23 | Finalization of Colonization Conquerors |
 | 12/3/23 - 12/9/23 | Colonization Conquerors Project Final Presentation |
