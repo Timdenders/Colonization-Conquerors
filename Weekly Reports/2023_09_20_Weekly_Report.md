@@ -50,7 +50,7 @@ ___
     - Experimented with tilemaps.
 
 - **Plans:**
-    - Develop an interactive tilemap that functions properly.
+  - Waiting for tile map completion for further project progression.
 
 #
 #### **Grant Palmieri:**
@@ -58,8 +58,9 @@ ___
     - Get familiar with Godot.
 
 - **Progress:**
-    
+    - Experimented with Godot engine
 - **Plans:**
+    - Waiting for tile map completion for further project progression.
 
 #
 #### **Joshua Murillo:**
@@ -79,5 +80,7 @@ ___
     - Get familiar with Godot.
 
 - **Progress:**
-    
+    - Experimented with Godot engine
+ 
 - **Plans:**
+    - Waiting for tile map completion for further project progression.
