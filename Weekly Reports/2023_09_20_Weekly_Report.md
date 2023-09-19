@@ -14,6 +14,8 @@ ___
 
 
 #### **Progress:**
+- Held Scrum Meeting (~30 minutes):
+    - Disscussed what was done/planned for the future of the project.
 - **New name: Colonization Conquerors**
 - **Tool familiarity:**
     - Completed introductory 2D game tutorial.
