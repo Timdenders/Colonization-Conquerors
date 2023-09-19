@@ -1,4 +1,4 @@
-# Empyria
+# Colonization Conquerors
 ___
 
 #### Overview:
@@ -10,15 +10,15 @@ An ongoing project aimed at developing a game that replicates the gameplay of th
 - Joshua Murillo (Game Programmer, Audio Engineer)
 - Zachary Thomas (Game Programmer, Technical Writer)
 
-Link to project repository: https://github.com/Timdenders/Empyria
+Link to project repository: https://github.com/Timdenders/Colonization-Conquerors
 
 Communication
 - Private: Penn State University – Microsoft Teams, Email, Canvas
-  - Throughout the course of this project’s development, the members of our team will actively communicate with each other about the design and production of the Empyria video game.
+  - Throughout the course of this project’s development, the members of our team will actively communicate with each other about the design and production of the Colonization Conquerors video game.
 
 
 #### Product Description:
-Empyria is set to be developed as a turn-based strategy game inspired by the classic Utopia (1982). The game revolves around building and creating a civilization, resource management, and competitive gameplay to win matches. It aims to blend the nostalgia of Utopia's core gameplay with different visuals, and user experience enhancements.
+Colonization Conquerors is set to be developed as a turn-based strategy game inspired by the classic Utopia (1982). The game revolves around building and creating a civilization, resource management, and competitive gameplay to win matches. It aims to blend the nostalgia of Utopia's core gameplay with different visuals, and user experience enhancements.
 
 Major Features
 - Island Development:
@@ -26,7 +26,7 @@ Major Features
 - Resource Management:
   - Managing resources is a crucial aspect of the game. Players need to allocate resources wisely to ensure the growth and prosperity of their island. Achieving success hinges on the strategic allocation of construction efforts.
 - Interaction with Rival Players:
-  - "Empyria" delivers a local two-player competitive gaming experience, enabling players to fund rebel activities on their opponent's island and incite confrontations between their PT boats and the rival's fishing boats.
+  - "Colonization Conquerors" delivers a local two-player competitive gaming experience, enabling players to fund rebel activities on their opponent's island and incite confrontations between their PT boats and the rival's fishing boats.
 - Natural Disasters & Events:
   - Random disasters and events can occur in the game, adding an element of unpredictability. These events, such as rain storms or hurricanes, can have both positive and negative effects on a player's construction.
 
@@ -41,9 +41,9 @@ Stretch Goals
 | Use Case 1    | Player Building & Island Development |
 | -------- | ------- |
 | Actor | Player |
-| Trigger | The player desires to initiate construction and <br />development on an island within Empyria. |
+| Trigger | The player desires to initiate construction and <br />development on an island within Colonization Conquerors. |
 | Preconditions | The player has started a new match. |
-| Postconditions <br />(Success Scenario) | The player successfully builds and develops his land in Empyria. |
+| Postconditions <br />(Success Scenario) | The player successfully builds and develops his land in Colonization Conquerors. |
 | List of Steps <br />(Success Scenario) | a. The player constructs objects on the island. <br />b. The player manages resources and continues expanding the island. |
 | Extensions/Variations <br />of the Success Scenario | The player can choose different structures and <br />resource allocation strategies. |
 | Exceptions: Failure <br />Conditions & Scenarios | If the player’s resources are insufficient, the chosen <br />structures cannot be built. |
@@ -106,12 +106,12 @@ Group Roles
   - Technical Writer (creates clear and comprehensive documentation, user manuals, and guides to help players understand and navigate the game effectively)
 
 Schedule 
-- To execute this project concept, our team will need to follow a series of sequential steps that will guide us toward the successful completion of Empyria. These steps encompass:
+- To execute this project concept, our team will need to follow a series of sequential steps that will guide us toward the successful completion of Colonization Conquerors. These steps encompass:
 
 | Date              | Task                            |
 |-------------------|---------------------------------|
 | 9/10/23 - 9/16/23 | Getting familiar with our tools |
-| 9/17/23 - 9/23/23 | Creating Empyria Prototype (Game Mechanics Focused) |
+| 9/17/23 - 9/23/23 | Creating Colonization Conquerors Prototype (Game Mechanics Focused) |
 | 9/24/23 - 9/30/23 | Continue Prototype Creation/Testing |
 | 10/1/23 - 10/7/23 | Redesign Game Implementation/Testing |
 | 10/8/23 - 10/14/23 | Begin Development Of Final Version |
@@ -120,8 +120,8 @@ Schedule
 | 10/29/23 - 11/4/23 | Finalization Of In-Game Sprites |
 | 11/5/23 - 11/11/23 | Finalization Of Sound Design |
 | 11/12/23 - 11/18/23 | Work On Extra Features (Leaderboards/Discord Integration) |
-| 11/26/23 - 12/2/23 | Finalization of Empyria |
-| 12/3/23 - 12/9/23 | Empyria Project Final Presentation |
+| 11/26/23 - 12/2/23 | Finalization of Colonization Conquerors |
+| 12/3/23 - 12/9/23 | Colonization Conquerors Project Final Presentation |
 
 Major Risks
 - One significant risk involves succumbing to the allure of incorporating non-essential features, potentially diverting resources from core development efforts.
