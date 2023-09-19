@@ -46,7 +46,7 @@ ___
     - Get familiar with Godot.
 
 - **Progress:**
-    - Created UI in Godot.
+    - Created UI (setup menu and scoreboard) in Godot.
     - Experimented with tilemaps.
 
 - **Plans:**
