@@ -110,18 +110,18 @@ Schedule
 
 | Date              | Task                            |
 |-------------------|---------------------------------|
-| 9/10/23 - 9/16/23 | Getting familiar with our tools |
-| 9/17/23 - 9/23/23 | Creating Colonization Conquerors Prototype (Game Mechanics Focused) |
-| 9/24/23 - 9/30/23 | Continue Prototype Creation/Testing |
-| 10/1/23 - 10/7/23 | Redesign Game Implementation/Testing |
-| 10/8/23 - 10/14/23 | Begin Development Of Final Version |
-| 10/15/23 - 10/21/23 | Finalization of Mechanics |
-| 10/22/23 - 10/28/23 | Finalization of GUI |
-| 10/29/23 - 11/4/23 | Finalization of In-Game Sprites |
-| 11/5/23 - 11/11/23 | Finalization of Sound Design |
-| 11/12/23 - 11/18/23 | Work On Extra Features (Leaderboards/Discord Integration) |
+| 9/10/23 - 9/16/23 | Get familiar with our tools |
+| 9/17/23 - 9/23/23 | Start creating Colonization Conquerors prototype |
+| 9/24/23 - 9/30/23 | Continue prototype creation/testing |
+| 10/1/23 - 10/7/23 | Redesign game implementation and do further testing |
+| 10/8/23 - 10/14/23 | Completion of prototype, begin development of beta |
+| 10/15/23 - 10/21/23 | Finalization of mechanics |
+| 10/22/23 - 10/28/23 | Finalization of GUI and in-game sprites |
+| 10/29/23 - 11/4/23 | Finalization of sound design |
+| 11/5/23 - 11/11/23 | Work on extra features (Leaderboards/Discord integration) |
+| 11/12/23 - 11/18/23 | Continue working on extra features |
+| 11/19/23 - 11/25/23 | Finalization of documentation |
 | 11/26/23 - 12/2/23 | Finalization of Colonization Conquerors |
-| 12/3/23 - 12/9/23 | Colonization Conquerors Project Final Presentation |
 
 Major Risks
 - One significant risk involves succumbing to the allure of incorporating non-essential features, potentially diverting resources from core development efforts.
