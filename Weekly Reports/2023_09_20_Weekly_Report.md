@@ -3,7 +3,7 @@ ___
 
 ### Team Status Update:
 #### **Goals:**
-- The original name, "Empyria" is copyrighted.
+- **The original name, "Empyria" is copyrighted.**
     - Come up with a new name.
 - **Get familiar with our tools:**
     - Godot game engine.
@@ -14,7 +14,7 @@ ___
 
 
 #### **Progress:**
-- Held Scrum Meeting (~30 minutes):
+- **Held Scrum Meeting (~30 minutes):**
     - Discussed what was done/planned for the future of the project.
 - **New name: Colonization Conquerors**
 - **Tool familiarity:**
@@ -60,7 +60,8 @@ ___
     - Get familiar with Godot.
 
 - **Progress:**
-    - Experimented with Godot engine
+    - Experimented with Godot engine.
+
 - **Plans:**
     - Waiting for tile map completion for further project progression.
 
@@ -82,7 +83,7 @@ ___
     - Get familiar with Godot.
 
 - **Progress:**
-    - Experimented with Godot engine
+    - Experimented with Godot engine.
  
 - **Plans:**
     - Waiting for tile map completion for further project progression.
