@@ -110,7 +110,7 @@ Schedule
 
 | Date              | Task                            |
 |-------------------|---------------------------------|
-| 9/10/23 - 9/16/23 | ~~Get familiar with our tools~~ |
+| 9/10/23 - 9/16/23 | Get familiar with our tools |
 | 9/17/23 - 9/23/23 | Start creating Colonization Conquerors prototype |
 | 9/24/23 - 9/30/23 | Continue prototype creation/testing |
 | 10/1/23 - 10/7/23 | Redesign game implementation and do further testing |
