@@ -17,6 +17,9 @@ ___
   - UI system.
   - Object select.
   - Numerical player variables.
+    - Score count.
+    - Currency count.
+    - Asset count.
 #### **Plans:**
 - **Connect game map and UI system functionality to player variables and add sprites.**
 - **Continue to design and delegate other game mechanics/resources:**
