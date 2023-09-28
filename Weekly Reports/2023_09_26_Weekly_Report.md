@@ -61,7 +61,7 @@ ___
 #### **Joshua Murillo:**
 - **Goals:**
   -  Finish tilemap.
-    - Tilemap includes a crude layout of the two territories (land and sea) used for gameplay mechanics.
+    -  Tilemap includes a crude layout of the two territories (land and sea) used for gameplay mechanics.
   - Add sidebar buttons.
     - Buttons are selectable (one at a time for an individual player).
     - While held, the game will place the respective object onto the last selected tile.
