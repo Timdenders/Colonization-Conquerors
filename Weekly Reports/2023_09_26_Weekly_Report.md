@@ -24,7 +24,7 @@ ___
   - Fishing events.
   - Rebel events.
   - Better in-game sprites.
-  - More fleshed out UI/Map design.
+  - More fleshed out UI/map design.
 #
 ### Individual Contributions:
 
@@ -35,7 +35,7 @@ ___
 - **Progress:**
   - The world user interface underwent modifications.
     - Increased tile size for improved visibility into the cell interior.
-    - The sprite for illustrating land and sea is redone so there is no visible clipping.
+    - The land and sea illustration sprite has been updated to eliminate any noticeable clipping.
     - Modified the dimensions and placements of the tilemap and scoreboard to enhance the overall design.
     - Incorporated an out-of-bounds tilemap to occupy the remaining screen space.
     - Slight adjustments to the size of each island to ensure equal spacing for fairness.
