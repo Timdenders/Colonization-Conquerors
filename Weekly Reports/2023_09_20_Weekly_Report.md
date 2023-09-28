@@ -8,7 +8,7 @@ ___
 - **Get familiar with our tools:**
     - Godot game engine.
     - Pixel art software.
-- **Isolate core bare-bones game features.**
+- **List core bare-bones game features.**
 - **Finish the conceptual draft of the game.**
 - **Begin construction of game prototype.**
 
@@ -20,6 +20,9 @@ ___
 - **Tool familiarity:**
     - Completed introductory 2D game tutorial.
         - Familiar with making projects/scripts and integrating nodes, picture assets, and code into a working game. 
+- **Created UI for game.**
+
+#### **Plans:**
 - **Bare-bones game:**
     - Tile gameboard.
     - The player has currency to buy objects.
@@ -30,9 +33,6 @@ ___
         - Rain storm event.
         - Tropical storm event.
         - Hurricane event.
-- **Created UI for game.**
-
-#### **Plans:**
 - **Complete tile board.**
 - **Create game object sprite placeholders.**
 - **Work on making a hexagonal tile map.**
