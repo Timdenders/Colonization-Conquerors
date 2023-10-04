@@ -38,13 +38,13 @@ ___
 #
 #### **Grant Palmieri:**
 - **Goals:**
-    - 
+    - Complete the creation of personalized in-game sprites .
 
 - **Progress:**
-    - 
+    - Finished the creation of in-game sprites.
 
 - **Plans:**
-    - 
+    - Work on game logic.
 
 #
 #### **Joshua Murillo:**
