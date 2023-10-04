@@ -16,7 +16,7 @@ ___
 
 #### **Plans:**
 - **Have a working protoype of the game's core mechanics.**
-- **Begin implimentation of secondary game mechanics:**
+- **Begin implimentation of secondary game mechanics/logic:**
   - Weather events.
   - Fishing events.
   - Rebel events.
@@ -40,9 +40,11 @@ ___
         - Constrict player rebel assets to spawn on the other player's continent.
     - Continued work on keybinds.
     - Continued work on in-game sprites.
+    - Changed game frames per second to match 30 fps for all game scenes.
 
 - **Plans:**
-  - 
+  - Work on game logic.
+  - Further refine currently implimented game mechanics
 
 #
 #### **Grant Palmieri:**
@@ -81,10 +83,10 @@ ___
 #
 #### **Zachary Thomas:**
 - **Goals:**
-    - 
+    - Get more familiar with the Godot engine and project progression.
 
 - **Progress:**
-    - 
+    - Looked further into implimented game mechanics.
  
 - **Plans:**
-    - 
+    - Work on game logic.
