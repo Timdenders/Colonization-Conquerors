@@ -27,10 +27,19 @@ ___
 
 #### **Timothy Enders:**
 - **Goals:**
-    - 
+  - Start generating sprites for the game.
+  - Add a keybinding to enable cursor switching, allowing it to move to a tile upon a mouse click.
+  - Create keyboard shortcuts to swiftly generate constructible items.
 
 - **Progress:**
-    - 
+    - Created a new layer over the tile map to accurately place objects on the map.
+        - Repeated these steps for player one and two cursers.
+    - Refinded object placement:
+        - Constrict boats to continent harbors.
+        - Constrict player one and two building objects to their own continents.
+        - Constrict player rebel assets to spawn on the other player's continent.
+    - Continued work on keybinds.
+    - Continued work on in-game sprites.
 
 - **Plans:**
   - 
