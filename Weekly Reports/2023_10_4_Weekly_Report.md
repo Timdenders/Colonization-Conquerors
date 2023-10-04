@@ -60,7 +60,7 @@ ___
     - Had consistant issues with the placement of objects not aligning with the intended tile positions.
         - Reasons for this may include:
             - Unfamiliarity with tilemap related functions in Godot.
-            - Initial mistake of working with Object placement and tilemap interaction in separate scenes.
+            - Initial mistake of working with object placement and tilemap interaction in separate scenes.
             - Lack of available time that was able to be allocated towards the project this past week.
 
 - **Plans:**
