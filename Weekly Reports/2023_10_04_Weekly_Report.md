@@ -30,7 +30,6 @@ ___
   - Start generating sprites for the game.
   - Add a keybinding to enable cursor switching, allowing it to move to a tile upon a mouse click.
   - Create keyboard shortcuts to swiftly generate constructible items.
-
 - **Progress:**
   - Created a new layer over the tile map to accurately place objects on the map.
     - Repeated these steps for player one and two cursors.
@@ -44,7 +43,6 @@ ___
   - Enhanced the user experience by disabling input controls at the end of the match to prevent unintended actions.
   - Continued development of in-game sprites.
   - Standardized the game's frame rate to a consistent 30 frames per second (fps) across all game scenes.
-
 - **Plans:**
   - Work on game logic.
   - Continuously enhance and fine-tune the existing game mechanics.
@@ -53,10 +51,8 @@ ___
 #### **Grant Palmieri:**
 - **Goals:**
   - Keep generating sprites for the game.
-
 - **Progress:**
   - Finished the creation of in-game sprites.
-
 - **Plans:**
   - Work on game logic.
 
@@ -65,18 +61,15 @@ ___
 - **Goals:**
   - Complete sidebar button functionality.
     - Add connections between player numerical info, map data, and button functionality.
-
 - **Progress:**
   - Reworked buttons to be place in a more appropriate position.
   - Attempted to hack at the object placement relative to the tile map positions that were last clicked.
-
 - **Issues:**
   - Had consistent issues with the placement of objects not aligning with the intended tile positions.
     - Reasons for this may include:
       - Unfamiliarity with tilemap related functions in Godot.
         - Initial mistake of working with object placement and tilemap interaction in separate scenes.
         - Lack of available time that was able to be allocated towards the project this past week.
-
 - **Plans:**
   - Allocate more time to the project.
   - Add interaction between object buttons and player-related variables.
@@ -87,9 +80,7 @@ ___
 #### **Zachary Thomas:**
 - **Goals:**
   - Get more familiar with the Godot engine and project progression.
-
 - **Progress:**
   - Look further into implemented game mechanics.
- 
 - **Plans:**
   - Work on game logic.
