@@ -37,7 +37,7 @@ ___
   - Made minor adjustments to the World UI to improve aesthetics.
   - Implemented the ability to place objects using keybinds.
   - Refined object placement:
-    - Added a feature where a rebel soldier appear randomly on the opponent's island when the corresponding key is pressed.
+    - Added a feature where a rebel soldier appears randomly on the opponent's island when the corresponding key is pressed.
     - Implemented the functionality for a boat to appear at the player's harbor when the corresponding key is pressed.
     - Restructured the game to allow players to place land objects only on their own island.
   - Enhanced the user experience by disabling input controls at the end of the match to prevent unintended actions.
