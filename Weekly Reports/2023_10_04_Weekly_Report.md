@@ -31,7 +31,7 @@ ___
   - Add a keybinding to enable cursor switching, allowing it to move to a tile upon a mouse click.
   - Create keyboard shortcuts to swiftly generate constructible items.
 - **Progress:**
-  - Created a new layer over the tile map to accurately place objects on the map.
+  - Established a new overlay layer on the tile map for precise object placement on the map.
     - Repeated these steps for player one and two cursors.
   - Introduced player distinctions while using the player cursors in conjunction with the Sidebar buttons.
   - Made minor adjustments to the World UI to improve aesthetics.
