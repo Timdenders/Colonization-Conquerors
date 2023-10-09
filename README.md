@@ -40,6 +40,26 @@ Stretch Goals
 - Discord Integration:
   - Incorporate an online multiplayer dimension into the game, where a third player assumes the role of the "Gamemaster" responsible for orchestrating dynamic events. The Gamemaster can wield control over various in-game parameters, such as adjusting construction costs, and weather occurrence rates, using Discord as a medium for these modifications.
 
+#### Software Architecture:
+Major components of our software:
+
+(What interfaces do they use?)
+
+(What data does our software store?)
+
+(Describe alternatives to our software architecture)
+
+#### Software Design:
+(What packages, classes, or other units of abstraction form these components above?)
+
+(What are the responsibilities of each of those parts of a component)
+
+#### Coding Guidelines:
+(provide a link
+to a pre-existing coding style guideline that the members of your project will follow)
+
+(Briefly state why you chose those guidelines and how you plan to enforce them.)
+
 #### Use Cases:
 | Use Case 1    | Player Building & Island Development |
 | -------- | ------- |
