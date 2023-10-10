@@ -55,8 +55,7 @@ Major components of our software:
 (What are the responsibilities of each of those parts of a component)
 
 #### Coding Guidelines:
-(provide a link
-to a pre-existing coding style guideline that the members of your project will follow)
+Link to Godot GDScript style guide: https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_styleguide.html 
 
 (Briefly state why you chose those guidelines and how you plan to enforce them.)
 
