@@ -1,5 +1,4 @@
 # Colonization Conquerors
-___
 ### Repository Contents:
 - Source Code: The heart of our project lies here, where we've meticulously crafted the game's functionality and mechanics.
 - README: This document provides an overview of the project, team information, major features, stretch goals, use cases, non-functional requirements, and more. It serves as your guide to Colonization Conquerors.
@@ -56,15 +55,21 @@ Interfaces Between Components:
 
 Data Storage:
 We do not currently use a database in our game project. Instead, we store data within the game engine's runtime memory. 
+
 Alternative Architectural Decisions:
-- Client-Server Architecture: An alternative approach could involve implementing a client-server architecture with the integration of Discord API to enable players to interact with the game through a Discord bot. 
-Pro: 
+1. Client-Server Architecture: An alternative approach could involve implementing a client-server architecture with the integration of Discord API to enable players to interact with the game through a Discord bot.
+
+Pro:
 - Enhanced Gameplay: Provides a more engaging and dynamic gaming experience by allowing a third player to supervise and modify the game's mechanics. 
-Con: 
-- Complexity: Implementing a client-server architecture can be complex, requiring more time to establish. 
-- Database Integration: Another alternative is integrating a lightweight database system to store game data, particularly leaderboards, persistently. This could enable features like recording and displaying player statistics. 
-Pro :
-- Persistent Leaderboards: Allows for the storage of leaderboards, ensuring that players' statistics are saved and can be viewed across sessions. 
+
+Con:
+- Complexity: Implementing a client-server architecture can be complex, requiring more time to establish.
+
+2. Database Integration: Another alternative is integrating a lightweight database system to store game data, particularly leaderboards, persistently. This could enable features like recording and displaying player statistics.
+
+Pro:
+- Persistent Leaderboards: Allows for the storage of leaderboards, ensuring that players' statistics are saved and can be viewed across sessions.
+
 Con:
 - Security Concerns: Securing player data within the database is essential, as it should only be accessible to the developers and not to any unauthorized individuals. 
 
