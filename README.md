@@ -14,14 +14,16 @@ An ongoing project aimed at developing a game that replicates the gameplay of th
 - Joshua Murillo (Game Programmer, Audio Engineer)
 - Zachary Thomas (Game Programmer, Technical Writer)
 
-#### Communication
+**Communication**
+
 - Private: Penn State University – Microsoft Teams, Email, Canvas
   - Throughout the course of this project’s development, the members of our team will actively communicate with each other about the design and production of the Colonization Conquerors video game.
 
 ### Product Description:
 Colonization Conquerors is set to be developed as a turn-based strategy PC game inspired by the classic Utopia (1982). The game revolves around building and creating a civilization, resource management, and competitive gameplay to win matches. It aims to blend the nostalgia of Utopia's core gameplay with different visuals, and user experience enhancements.
 
-#### Major Features
+**Major Features**
+
 - Island Development:
   - Players can create and advance their island through the construction of diverse structures, including crops, factories, and forts. Each of these structures serves distinct functions, such as sustaining the population, generating revenue, or fortifying against potential attacks.
 - Resource Management:
@@ -31,7 +33,8 @@ Colonization Conquerors is set to be developed as a turn-based strategy PC game 
 - Natural Disasters & Events:
   - Random disasters and events can occur in the game, adding an element of unpredictability. These events, such as rain storms or hurricanes, can have both positive and negative effects on a player's construction.
 
-#### Stretch Goals
+**Stretch Goals**
+
 - User Interface Enhancements:
   - An intuitive and visually appealing user interface with clear navigation.
   - Leaderboards to showcase player rankings and scores.
@@ -39,24 +42,29 @@ Colonization Conquerors is set to be developed as a turn-based strategy PC game 
   - Incorporate an online multiplayer dimension into the game, where a third player assumes the role of the "Gamemaster" responsible for orchestrating dynamic events. The Gamemaster can wield control over various in-game parameters, such as adjusting construction costs, and weather occurrence rates, using Discord as a medium for these modifications.
 
 ### Software Architecture:
-#### Overview of the System
+**Overview of the System**
+
 In our game project, the major software components include:
+
 - Setup Menu Component: Responsible for displaying the setup menu UI, and handling user input for starting the game.
 - World Component: Central to gameplay, manages player interactions on a tile-based map, allowing players to place objects, move their cursors, and respond to input.
 - Global Data Component: A singleton script that stores global variables and settings, facilitating data sharing between different parts of the game.
 - Scoreboard Component: Manages UI elements for displaying player scores, round timers, and other game-related information.
 - Input Validation Component: Handles input validation for text input fields, ensuring correct user input within the game.
 
-#### Interfaces Between Components
+**Interfaces Between Components**
+
 - The setup menu component communicates with the gameplay component to start and manage game rounds.
 - The world component interacts with the global data component to store and retrieve game-related data.
 - The scoreboard component updates its UI based on data provided by the world component.
 
-#### Data Storage
+**Data Storage**
+
 We do not currently use a database in our game project. Instead, we store data within the game engine's runtime memory.
 
-#### Alternative Architectural Decisions
-**Client-Server Architecture:** An alternative approach could involve implementing a client-server architecture with the integration of Discord API to enable players to interact with the game through a Discord bot.
+**Alternative Architectural Decisions**
+
+Client-Server Architecture: An alternative approach could involve implementing a client-server architecture with the integration of Discord API to enable players to interact with the game through a Discord bot.
 
 Pro
   - Enhanced Gameplay: Provides a more engaging and dynamic gaming experience by allowing a third player to supervise and modify the game's mechanics.
@@ -64,7 +72,7 @@ Pro
 Con
   - Complexity: Implementing a client-server architecture can be complex, requiring more time to establish.
 
-**Database Integration:** Another alternative is integrating a lightweight database system to store game data, particularly leaderboards, persistently. This could enable features like recording and displaying player statistics.
+Database Integration: Another alternative is integrating a lightweight database system to store game data, particularly leaderboards, persistently. This could enable features like recording and displaying player statistics.
 
 Pro
   - Persistent Leaderboards: Allows for the storage of leaderboards, ensuring that players' statistics are saved and can be viewed across sessions.
@@ -73,14 +81,16 @@ Con
   - Security Concerns: Securing player data within the database is essential, as it should only be accessible to the developers and not to any unauthorized individuals.
 
 ### Software Design:
-#### Component Definitions
+**Component Definitions**
+
 - Setup Menu Component: Consists of UI elements and logic for displaying and handling the setup menu. Key classes and elements include Setup_Menu_Scr.gd, labels, and user input handlers.
 - World Component: Controls gameplay interactions on a tile-based map. Key classes and elements include TileMap_Contr.gd (for player actions and map interactions), and TileMapWorld (for rendering the map).
 - Global Data Component: A singleton script with a single class Global.gd, responsible for storing and managing global game data.
 - Scoreboard Component: Manages UI elements for displaying player information and a round timer. Key classes include Score_Board_Scr.gd and UI elements (labels and a timer).
 - Input Validation Component: Handles input validation for text input fields. Key classes include SMInput1.gd, SMInput2.gd, and the user input handlers.
 
-#### Responsibilities
+**Responsibilities**
+
 - Setup Menu Component: The setup menu labels offer guidance regarding the expected input for the user input handlers.
 - World Component: TileMapWorld is a tile map, rendering game sprites, and its behavior is managed by the TileMap_Contr.gd class, which handles changes triggered by both system processes and player input.
 - Global Data Component: Comprises global variables that receive input from the player via the Setup Menu Component, as well as a global variable designed to indicate the conclusion of a match.
@@ -124,13 +134,16 @@ For GDScript, we follow the official Godot Engine GDScript style guide available
 | Exceptions: Failure <br />Conditions & Scenarios | Failure to act may result in a natural disaster <br />inflicting substantial damage upon the player’s <br />constructions. |
 
 ### Non-Functional Requirements:
-#### User Support & Documentation
+**User Support & Documentation**
+
 - Provide clear and comprehensive in-game help and tutorials to assist new players.
 
-#### Accessibility
+**Accessibility**
+
 - Guarantee that the game accommodates players who desire customizable control features.
 
-#### Security
+**Security**
+
 - Implement security measures to prevent cheating or hacking.
 - Ensure data privacy for user information if Discord integration is utilized.
 
@@ -144,39 +157,46 @@ In addition to code stability, our team is committed to maintaining robust docum
 ### Team Process Description:
 For our project, we have chosen Godot as our game engine because of its exceptional beginner-friendliness for crafting 2D games, complemented by its integrated networking capabilities. We will primarily use GDScript in Godot for our coding tasks since it closely resembles Python, a language the team is proficient in. In terms of audio production, we will employ Audacity as our software of choice due to its user-friendly interface and fundamental feature set, which adequately fulfills our requirements. Each team member's role has been thoughtfully assigned based on their individual skill sets and aptitude, ensuring that they are best equipped to contribute effectively to the project's success.
 
-#### Top Five Major Risk
-#### Not focusing on what matters:
+**Top Five Major Risks**
+
+Not focusing on what matters:
+
 - One significant risk involves succumbing to the allure of incorporating non-essential features, potentially diverting resources from core development efforts.
 - While this risk may begin as being relatively unimpactful, as our project approaches the prototype's completion, we may run into some decisions as to what needs to get done and what should be thrown out for the sake of completion.
 - The greatest risk, if this issue emerges, is the waste and loss of time that could have been spent more productively.
 - To mitigate this risk, our team simply needs to make sure that everyone's job is clearly defined. We also need to keep in contact with each other to update what tasks need to be completed and which ones may need to be dropped so that everyone is doing a task that is directly progressing the project toward its completion.
 
-#### Unfamiliarity with each other:
+Unfamiliarity with each other:
+
 - Another notable risk stems from our team's lack of prior experience working together, especially considering the project's scope; unforeseen challenges may arise.
 - The chance of these issues posing any kind of threat towards the completion of our project will likely be at its highest at the beginning of our time working together and should slowly reduce itself as time goes by.
   - So far we have had some issues keeping in contact with each other due to scheduling conflicts.
 - The greatest threat this issue poses is a lack of coordination between team members which would then lead to wasted time and a lack of productivity.
 - To mitigate this risk, our team members tend to do most of our planning during group-focused days in our CMPSC 487W class and regularly during the first few minutes of regular class time while the instructor is setting up. That said we would still like to hold regular weekly meetings whenever possible. In this regard, the only thing we can do is update each other on our weekly availability in hopes of finding some mutual time frame as often as we can.
 
-#### Experience level:
+Experience level:
+
 - Additionally, our chosen engine, although seemingly straightforward and suitable for the game, poses a risk as none of us have prior experience with it, and as development progresses, unforeseen complexities may emerge.
 - The risk of this potential issue hindering our ability to complete the project on time is quite high compared to some of the other risks mentioned so far. Reasons for this include:
   - Godot has undertaken a significant update 3 to 4.0 which replaces many of the old built-in functions as well as their parameters compared to the old version.
     - As many tutorials and documented issues are written before 4.0, every now and then, our team members have run into instances where researching how to accomplish something in Godot takes longer than expected. We would end up trying to implement a function only to run into problems and later find out that Godot 4.0 has renamed or changed the parameters of those functions. A common response to similar issues posed by other users of the software would usually include, "This function was changed in Godot 4.0."
 - The best way to mitigate this risk is by searching specifically for Godot 4.0 compatible references and sticking close to the Godot 4.0 documentation. That said, This simple fix does not completely prevent this issue from reoccurring.
 
-#### Team-Based Technical Challenges:
+Team-Based Technical Challenges:
+
 - Building off of some of the previously declared risks. Another issue we run the risk of running into is the incompatibility of our code.
 - Since our team is primarily working off of copies of the latest version of the project, there may be times when one or more of us ends up having issues with adding our most recent additions to the project without running into conflicts with another team member's code.
 - The risk of this occurring may rise as the project's coding scripts are expanded. The risk runs higher still, as more of our members start taking coding roles simultaneously.
 - The best way to mitigate this risk is by making sure to communicate with each other as soon as we have issues and to make it known whenever we make any significant changes to the project code. This is especially true when a member's additions are spread out through multiple coding scripts as it can be difficult to keep track of every new change if it is not clearly defined.
 
-#### Time constraints:
+Time constraints:
+
 - One of the largest issues plaguing the progression of our project is time. Whether it be a lack of time for individual members to complete tasks on schedule, or schedules not lining up for meetings where issues like scheduling would normally be dealt with, time has been the most unpredictable and impactful issue that poses the greatest risk towards the completion of this project.
 - Ultimately, every other risk mentioned ends up dealing with a loss of time or productivity. The less time we are able to spend on the project, the higher the likelihood of us having to cut features from the game, or lowering the quality of the features we need to have in the long run.
 - The only way to mitigate this risk is by taking the necessary steps to mitigate the previously described risks. This way, we can maximize the amount of time and the productivity of that used time towards completing the project up to the standards that we originally envisioned.
 
-#### Schedule
+**Schedule**
+
 - To execute this project concept, our team will need to follow a series of sequential steps that will guide us toward the successful completion of Colonization Conquerors. These steps encompass:
 
 | Date              | Task                            |
@@ -194,8 +214,9 @@ For our project, we have chosen Godot as our game engine because of its exceptio
 | 11/19/23 - 11/25/23 | Finalization of documentation |
 | 11/26/23 - 12/2/23 | Finalization of Colonization Conquerors |
 
-#### Major Milestones
-#### Creation of the Colonization Conquerors Prototype:
+**Major Milestones**
+
+Creation of the Colonization Conquerors Prototype:
 
 (Every sub-milestone depends on the completion of the sub-milestone above it)
 
@@ -215,7 +236,7 @@ For our project, we have chosen Godot as our game engine because of its exceptio
     - Rain helping crops grow.
     - Storms and tornadoes damaging player objects.
 
-#### Creation of the Colonization Conquerors Beta:
+Creation of the Colonization Conquerors Beta:
 
 At this point, our development cycle can start more heavily relying on real testing which will guide our next steps.
 
@@ -224,11 +245,13 @@ At this point, our development cycle can start more heavily relying on real test
 - Decide what additional features we believe we can add to the game before its release.
 - Clean up code of already implemented features.
 
-**Finalization of the Colonization Conquerors video game:**
+Finalization of the Colonization Conquerors video game:
+
 - Finalize the design of the UI.
 - Clean up in-game object interactions and related code to provide a smoother experience.
 
-#### Team Structure
+**Team Structure**
+
 - Timothy Enders
   - Game Programmer (responsible for coding and implementing the software and functionality of the game)
   - Game Designer (responsible for conceptualizing the core gameplay elements, mechanics, and user experience)
@@ -242,14 +265,17 @@ At this point, our development cycle can start more heavily relying on real test
   - Game Programmer (responsible for coding and implementing the software and functionality of the game)
   - Technical Writer (creates clear and comprehensive documentation, user manuals, and guides to help players understand and navigate the game effectively)
 
-#### External Feedback
+**External Feedback**
+
 We believe the optimal moment to seek external assistance is during the initial testing phase, as it allows for potential refinements if certain aspects do not resonate with the audience. The most effective approach to gathering this input is by involving external individuals to playtest the game and share their feedback and impressions.
 
-#### Current Feedback
+**Current Feedback**
+
 - Extend the Tilemap to randomly generate different islands for users to play on.
 - Have two players be able to play from two different machines instead of from the same computer.
 
-#### Documentation Plan
+**Documentation Plan**
+
 When exploring our game's inspiration, the 1982 classic, Utopia, all of our team members had a similar thought, "What exactly is going on here?" After finding a PDF manual for the Intelevisiion game, many of our questions were answered, but not all of them. The original game's manual never went into detail about the exact relationship between player objects, currency, population density, population satisfaction, or points. The explanations were somewhat vague as to exactly what numerically leads to what. In light of this, our team decided that our game would come with a much more in-depth user guide that we plan to integrate right into the game that players can access at any time.
 
 The user guide will include:
