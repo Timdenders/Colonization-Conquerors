@@ -38,7 +38,7 @@ ___
 - **Goals:**
   - Work on game logic.
 - **Progress:**
-  - 
+  - Started implimentation of school and hospital
 - **Plans:**
   - Begin design and implimentation of School and Hospital related mechanics
 
