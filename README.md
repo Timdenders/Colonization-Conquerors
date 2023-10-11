@@ -226,7 +226,7 @@ At this point, our development cycle can star more heavilty relying on real test
 - Finalize the design of the UI.
 - Clean up in-game object interactions and related code to provide a more smooth experience.
 
-#### Group Roles:
+#### Team Structure:
 - Timothy Enders
   - Game Programmer (responsible for coding and implementing the software and functionality of the game)
   - Game Designer (responsible for conceptualizing the core gameplay elements, mechanics, and user experience)
