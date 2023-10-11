@@ -145,7 +145,7 @@ In addition to code stability, our team is committed to maintaining robust docum
 For our project, we have chosen Godot as our game engine because of its exceptional beginner-friendliness for crafting 2D games, complemented by its integrated networking capabilities. We will primarily use GDScript in Godot for our coding tasks since it closely resembles Python, a language the team is proficient in. In terms of audio production, we will employ Audacity as our software of choice due to its user-friendly interface and fundamental feature set, which adequately fulfills our requirements. Each team member's role has been thoughtfully assigned based on their individual skill sets and aptitude, ensuring that they are best equipped to contribute effectively to the project's success.
 
 #### Top Five Major Risk
-    #### Not focusing on what matters:
+  #### Not focusing on what matters:
 - One significant risk involves succumbing to the allure of incorporating non-essential features, potentially diverting resources from core development efforts.
 - While this risk may begin as being relatively unimpactful, as our project approaches the prototype's completion, we may run into some decisions as to what needs to get done and what should be thrown out for the sake of completion.
 - The greatest risk, if this issue emerges, is the waste and loss of time that could have been spent more productively.
