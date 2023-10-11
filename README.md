@@ -247,3 +247,13 @@ We believe the optimal moment to seek external assistance is during the initial 
 **Current Feedback:**
 - Extend the Tile map to randomly generate different islands for users to play on.
 - Have two players be able to play from two different machines instead of from the same computer.
+
+#### Documentation Plan:
+When exploring our game's inspiration, the 1982 classic, Utopia, all of our team members had a similar thought, "What exactly is going on here?" After finding a PDF manual for the Intelevisiion game, many of our questions were answered, but not all of them. The original game's manual never went into detail about the exact relationship between player objects, currency, population density, population satisfaction, or points. The explanations were somewhat vague as to exactly what numerically leads to what. In light of this, our team decided that our game would come with a much more in-depth user guide that we plan to integrate right into the game that players can access at any time.
+
+The user guide will include:
+- Objective of the game.
+- A list of objects and their functions.
+- A list of game events and their functions.
+- A clear explanation of how our team decided to handle the relationship between population, currency, and the point system.
+
