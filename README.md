@@ -145,7 +145,7 @@ In addition to code stability, our team is committed to maintaining robust docum
 For our project, we have chosen Godot as our game engine because of its exceptional beginner-friendliness for crafting 2D games, complemented by its integrated networking capabilities. We will primarily use GDScript in Godot for our coding tasks since it closely resembles Python, a language the team is proficient in. In terms of audio production, we will employ Audacity as our software of choice due to its user-friendly interface and fundamental feature set, which adequately fulfills our requirements. Each team member's role has been thoughtfully assigned based on their individual skill sets and aptitude, ensuring that they are best equipped to contribute effectively to the project's success.
 
 #### Top Five Major Risk
-  #### Not focusing on what matters:
+#### Not focusing on what matters:
 - One significant risk involves succumbing to the allure of incorporating non-essential features, potentially diverting resources from core development efforts.
 - While this risk may begin as being relatively unimpactful, as our project approaches the prototype's completion, we may run into some decisions as to what needs to get done and what should be thrown out for the sake of completion.
 - The greatest risk, if this issue emerges, is the waste and loss of time that could have been spent more productively.
@@ -195,7 +195,7 @@ For our project, we have chosen Godot as our game engine because of its exceptio
 | 11/26/23 - 12/2/23 | Finalization of Colonization Conquerors |
 
 #### Major Milestones
-#### Creation of the Colonization Conquerors prototype:
+#### Creation of the Colonization Conquerors Prototype:
 
 (Every sub-milestone depends on the completion of the sub-milestone above it)
 
@@ -216,13 +216,13 @@ For our project, we have chosen Godot as our game engine because of its exceptio
     - Storms and tornadoes damaging player objects.
 
 **Creation of the Colonization Conquerors Beta:**
-  At this point, our development cycle can start more heavily relying on real testing which will guide our next steps.
+At this point, our development cycle can start more heavily relying on real testing which will guide our next steps.
 - Apply heavy user testing to see what features are working as intended or broken.
 - Review which necessary features need to be revised or debugged.
 - Decide what additional features we believe we can add to the game before its release.
 - Clean up code of already implemented features.
 
-**Finalization of the Colonization Conquerors videogame:**
+**Finalization of the Colonization Conquerors video game:**
 - Finalize the design of the UI.
 - Clean up in-game object interactions and related code to provide a smoother experience.
 
