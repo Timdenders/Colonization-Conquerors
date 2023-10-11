@@ -215,8 +215,10 @@ For our project, we have chosen Godot as our game engine because of its exceptio
     - Rain helping crops grow.
     - Storms and tornadoes damaging player objects.
 
-**Creation of the Colonization Conquerors Beta:**
+#### Creation of the Colonization Conquerors Beta:
+
 At this point, our development cycle can start more heavily relying on real testing which will guide our next steps.
+
 - Apply heavy user testing to see what features are working as intended or broken.
 - Review which necessary features need to be revised or debugged.
 - Decide what additional features we believe we can add to the game before its release.
