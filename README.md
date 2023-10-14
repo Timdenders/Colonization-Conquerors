@@ -102,7 +102,7 @@ For GDScript, we follow the official Godot Engine GDScript style guide available
 - We chose this guideline to maintain a standardized and consistent codebase, making it easier to collaborate and maintain the project.
 - Team members will receive training and guidance on GDScript best practices and the GDScript style guide to ensure they are familiar with the standards.
 
-### Use Cases:
+### Use Cases (Functional Requirements):
 | Use Case 1    | Player Building & Island Development |
 | -------- | ------- |
 | Actor | Player |
