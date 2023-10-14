@@ -83,16 +83,16 @@ Con
 ### Software Design:
 **Component Definitions**
 
-- Setup Menu Component: Consists of UI elements and logic for displaying and handling the setup menu. Key classes and elements include Setup_Menu_Scr.gd, labels, and user input handlers.
-- World Component: Controls gameplay interactions on a tile-based map. Key classes and elements include TileMap_Contr.gd (for player actions and map interactions), and TileMapWorld (for rendering the map).
+- Setup Menu Component: Consists of UI elements and logic for displaying and handling the setup menu. Key classes and elements include Setup_Menu.gd, labels, and user input handlers.
+- World Component: Controls gameplay interactions on a tile-based map. Key classes and elements include TileMap.gd (for player actions and map interactions), and TileMapWorld (for rendering the map).
 - Global Data Component: A singleton script with a single class Global.gd, responsible for storing and managing global game data.
-- Scoreboard Component: Manages UI elements for displaying player information and a round timer. Key classes include Score_Board_Scr.gd and UI elements (labels and a timer).
-- Input Validation Component: Handles input validation for text input fields. Key classes include SMInput1.gd, SMInput2.gd, and the user input handlers.
+- Scoreboard Component: Manages UI elements for displaying player information and a round timer. Key classes include Score_Board.gd and UI elements (labels and a timer).
+- Input Validation Component: Handles input validation for text input fields. Key classes include SM_Input_1.gd, SM_Input_2.gd, and the user input handlers.
 
 **Responsibilities**
 
 - Setup Menu Component: The setup menu labels offer guidance regarding the expected input for the user input handlers.
-- World Component: TileMapWorld is a tile map, rendering game sprites, and its behavior is managed by the TileMap_Contr.gd class, which handles changes triggered by both system processes and player input.
+- World Component: TileMapWorld is a tile map, rendering game sprites, and its behavior is managed by the TileMap.gd class, which handles changes triggered by both system processes and player input.
 - Global Data Component: Comprises global variables that receive input from the player via the Setup Menu Component, as well as a global variable designed to indicate the conclusion of a match.
 - Scoreboard Component: The user interface displays various labels for each player, presenting information such as their current scores, total scores, the remaining number of rounds, and a countdown timer for the current round. The timer dynamically updates the time remaining on the current round label.
 - Input Validation Component: This guarantees that user input in the Setup Menu Component is accurately captured as intended.
