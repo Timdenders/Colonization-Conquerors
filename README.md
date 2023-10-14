@@ -234,7 +234,7 @@ Creation of the Colonization Conquerors Prototype:
     - Rebels lower the productivity of the opponent's currency production and may damage the opponent's in-game objects if they are in range.
   - Weather events may spawn randomly and interact with the user's in-game objects.
     - Rain helping crops grow.
-    - Storms and tornadoes damaging player objects.
+    - Storms and hurricanes damaging player objects.
 
 Creation of the Colonization Conquerors Beta:
 
