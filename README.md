@@ -44,7 +44,7 @@ Colonization Conquerors is set to be developed as a turn-based strategy PC game 
 ### Software Architecture:
 **Overview of the System**
 
-In our game project, the major software components include:
+In our Godot game project, the major software components include:
 
 - Setup Menu Component: Responsible for displaying the setup menu UI, and handling user input for starting the game.
 - World Component: Central to gameplay, manages player interactions on a tile-based map, allowing players to place objects, move their cursors, and respond to input.
