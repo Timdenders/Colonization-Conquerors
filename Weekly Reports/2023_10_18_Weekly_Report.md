@@ -6,14 +6,14 @@ ___
 - Begin the design and implementation of mechanics related to placed objects in relation to the world, each other, and the player's numerical assets (Currency, Population, and Score counts).
 
 #### **Progress:**
-- Assigned each member a couple of game objects to focus on each object's respective game mechanics
+- Assigned each member a couple of game objects to focus on each object's respective game mechanics.
 
 #### **Plans:**
 - Complete isolated mechanics of individual game objects.
   - Isolated mechanics refers to mechanics specific to each object. Other mechanics, such as weather events damaging objects, will be added after the weather event's implementation.
 - Design, delegate, and begin implementation of random weather events.
 
-**NOTE:** Due to the current time frame of the semester, many of our group member have a number of exams that will negativly impact the amount of time available to progress the project. This setback should not last long.
+**NOTE:** Due to the current time frame of the semester, many of our group members have a number of exams that will negatively impact the amount of time available to progress the project. This setback should not last long.
 
 #
 ### Individual Contributions:
