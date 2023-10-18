@@ -48,6 +48,7 @@ ___
   - Continued working on the implementation of PT Boat and Fishing Boat-related mechanics.
 - **Plans:**
   - Completion of PT Boat and Fishing Boat-related mechanics.
+  - Look into Godot Build Systems using Scons.
 
 #
 #### **Zachary Thomas:**
