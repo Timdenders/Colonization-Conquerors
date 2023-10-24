@@ -206,9 +206,9 @@ Time constraints:
 | 9/24/23 - 9/30/23 | Continue prototype creation/testing |
 | 10/1/23 - 10/7/23 | Redesign game implementation and do further testing |
 | 10/8/23 - 10/14/23 | ~~Completion of prototype, begin development of beta~~ |
-| 10/15/23 - 10/25/23 | Completion of prototype, begin development of beta |
-| 10/26/23 - 10/28/23 | Finalization of mechanics |
-| 10/29/23 - 11/4/23 | Finalization of GUI and in-game sprites |
+| 10/15/23 - 10/21/23 | ~~Completion of prototype, begin development of beta~~ |
+| 10/22/23 - 10/28/23 | ~~Finalization of mechanics~~ |
+| 10/29/23 - 11/4/23 | Completion of prototype, begin development of beta <br> Finalization of GUI, in-game sprites, and mechanics |
 | 11/5/23 - 11/11/23 | Finalization of sound design <br> Work on extra features (Leaderboards/Discord integration) |
 | 11/12/23 - 11/18/23 | Continue working on extra features |
 | 11/19/23 - 11/25/23 | Finalization of documentation |
