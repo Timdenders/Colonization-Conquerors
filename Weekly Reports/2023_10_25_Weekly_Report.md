@@ -73,9 +73,10 @@ ___
     - Using this method takes roughly 25 to 50 minutes for the engine to compile.
       - Godot's Documentation states that using the MinGW-w64 method without VS code will take longer than the VS route.
     - While I was able to get the Godot engine running straight from its source on my machine using the platform=windows command. Github codespaces have only been able to detect the linuxbsd version despite the cloned Godot folder containing android, ios, linuxbsd, macos, web, and windows within its platform directory. Perhaps this is due to Github codespace's Linux environment, I will have to look into it more to find out.
-- Completed implimentation of Continuous Integration using GitHub Actions.
+- Completed implementation of Continuous Integration using GitHub Actions.
   - Ran into issues with OS presets not being recognized (FIXED)
-  - Currently, whenever a commit is pushed to "main" the CI Action will build and export a release of the game which are located under "releases".
+  - Currently, whenever a commit is pushed to "main" the CI Action will build and export a release of the game which is located under "releases". This will later run concurrently with a testing Action that will check if all tests run succssefully upon every commit.
+  - Releases for Windows and Linux.
 - Completed Fishing and Patrol Boat movement for both players. (Non-Collision)
   - Boats can move using arrow keys whenever a player's cursor is placed over the boat that the player owns.
 - **Plans:**
