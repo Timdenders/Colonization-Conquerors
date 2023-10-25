@@ -11,7 +11,7 @@ ___
 - Congregated for a 27-minute meeting to discuss the project's progression and future plans.
 - Completed some of the functionalities of the in-game objects.
 - Experimented with Godot build systems, CI implementation, and testing tools.
-  - Completed implimentation of continuous integration using GitHub Actions.
+  - Completed implementation of continuous integration using GitHub Actions.
 
 #### **Plans:**
 - Complete isolated mechanics of individual game objects.
