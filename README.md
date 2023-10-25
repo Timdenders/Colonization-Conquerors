@@ -223,7 +223,7 @@ Creation of the Colonization Conquerors Prototype:
 - Create a tile map:
   - Map should allow users to select tiles of their choice.
 - Create placeable objects:
-  - Create sprites to represent in-game objects similar to the objects found in the classic Utopia (1982) videogame.
+  - Create sprites to represent in-game objects similar to the objects found in the classic Utopia (1982) video game.
   - Once a tile has been placed, the user should have the option to ask the game to place an object of their choice on the tile of their choice.
   - If the user has the required funds to purchase the object, the object is then placed on the tile map.
   - The user who placed the object as well as the position of where that object was placed are then recorded to in-game memory.
