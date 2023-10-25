@@ -23,7 +23,7 @@ ___
   - Completion of Fort, Factory, and Crop-related mechanics.
 - **Progress:**
   - Completed the implementation of Crop-related mechanics.
-    - Crop objects will now disappear on Tilemap after 1 - 5 rounds. Its life value will increase if it is rained upon, which has not been implemented yet.
+    - Crop objects will now disappear on Tilemap after 1 - 5 rounds. Its life value will increase if it is rained upon, which will be implemented after rain/tropical storm mechanics are introduced.
       - Each one that disappears will decrease the player's food count by 500.
     - Added more warnings.
       - If the object cannot be placed in that position.
