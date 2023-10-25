@@ -24,7 +24,7 @@ ___
 - **Progress:**
   - Completed the implementation of Crop-related mechanics.
     - Crop objects will now disappear on Tilemap after 1 - 5 rounds. Its life value will increase if it is rained upon, which has not been implemented yet.
-      - Each one that disappears will decrease the food count by 500.
+      - Each one that disappears will decrease the player's food count by 500.
     - Added more warnings.
       - If the object cannot be placed in that position.
       - If there is already an object in that position.
