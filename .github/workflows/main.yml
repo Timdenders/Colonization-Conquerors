@@ -13,7 +13,7 @@ jobs:
 
   build:
   
-    runs-on: windows
+    runs-on: windows-latest
 
     steps:
 
