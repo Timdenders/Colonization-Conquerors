@@ -78,7 +78,7 @@ ___
   - Boats can move using arrow keys whenever a player's cursor is placed over the boat that the player owns.
 - **Plans:**
   - Continue working on implementing Continous Integration using GitHub Actions.
-  - Work on using GUT (Gotdot Unit Testing) with GitHub Actions to automatically run unit tests.
+  - Work on using GUT (Godot Unit Testing) with GitHub Actions to automatically run unit tests.
   - Implement game mechanics related to object collision between boats and world events.
 
 #
