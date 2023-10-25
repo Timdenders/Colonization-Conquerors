@@ -8,10 +8,12 @@ ___
 - Design, delegate, and begin implementation of random weather events.
 
 #### **Progress:**
-- Congregated for a 27 minute meeting to disscuss the project's progression and future plans.
+- Congregated for a 27 minute meeting to discuss the project's progression and future plans.
 
 #### **Plans:**
-- 
+- Complete isolated mechanics of individual game objects.
+  - Isolated mechanics refers to mechanics specific to each object. Other mechanics, such as weather events damaging objects, will be added after the weather event's implementation.
+- Design, delegate, and begin implementation of random weather events.
 
 #
 ### Individual Contributions:
@@ -20,18 +22,23 @@ ___
 - **Goals:**
   - Completion of Fort, Factory, and Crop-related mechanics.
 - **Progress:**
-  - 
+  - Completed the implementation of Crop-related mechanics.
+    - Crop objects will now disappear on Tilemap after 1 - 5 rounds. Its life value will increase if it is rained upon, which has not been implemented yet.
+      - Each one that disappears will decrease the food count by 500.
+    - Added more warnings.
+      - If the object cannot be placed in that position.
+      - If there is already an object in that position.
 - **Plans:**
-  - 
+  - Completion of Fort, Factory-related mechanics.
 
 #
 #### **Grant Palmieri:**
 - **Goals:**
   - Completion of School and Hospital-related mechanics.
 - **Progress:**
-  - 
+  - Continued working on implementation of School and Hospital.
 - **Plans:**
-  - 
+  - Completion of School and Hospital-related mechanics.
 
 #
 #### **Joshua Murillo:**
@@ -70,6 +77,6 @@ ___
 - **Goals:**
   - Completion of Housing and Rebel-related mechanics.
 - **Progress:**
-  - 
+  - Continued working on the implementation of Housing and Rebel-related mechanics.
 - **Plans:**
-  - 
+  - Completion of Housing and Rebel-related mechanics.
