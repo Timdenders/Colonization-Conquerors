@@ -1,0 +1,30 @@
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+  workflow_dispatch:
+
+jobs:
+
+  build:
+  
+    runs-on: windows
+
+    steps:
+
+      - uses: actions/checkout@v3
+      - name: exportGame
+        uses: firebelley/godot-export@v5.2.1
+        with: 
+          godot_executable_download_url: https://downloads.tuxfamily.org/godotengine/4.1.1/Godot_v4.1.1-stable_win64.exe.zip
+          godot_export_templates_download_url: https://downloads.tuxfamily.org/godotengine/4.1.1/Godot_v4.1.1-stable_export_templates.tpz
+          relative_project_path: Godot%20Project%20Dated%20Versions/Godot%20Projects/2023_10_14_Colonization_Conquerors.zip
+          create_release: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
+              
