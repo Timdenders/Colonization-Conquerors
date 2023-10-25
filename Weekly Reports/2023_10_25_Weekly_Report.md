@@ -11,12 +11,13 @@ ___
 - Congregated for a 27-minute meeting to discuss the project's progression and future plans.
 - Completed some of the functionalities of the in-game objects.
 - Experimented with Godot build systems, CI implementation, and testing tools.
+  - Completed implimentation of continuous integration using GitHub Actions.
 
 #### **Plans:**
 - Complete isolated mechanics of individual game objects.
   - Isolated mechanics refers to mechanics specific to each object. Other mechanics, such as weather events damaging objects, will be added after the weather event's implementation.
 - Design, delegate, and begin implementation of random weather events.
-- Implement CI and testing frameworks for Godot.
+- Implement testing framework for Godot.
 
 #
 ### Individual Contributions:
@@ -72,8 +73,9 @@ ___
     - Using this method takes roughly 25 to 50 minutes for the engine to compile.
       - Godot's Documentation states that using the MinGW-w64 method without VS code will take longer than the VS route.
     - While I was able to get the Godot engine running straight from its source on my machine using the platform=windows command. Github codespaces have only been able to detect the linuxbsd version despite the cloned Godot folder containing android, ios, linuxbsd, macos, web, and windows within its platform directory. Perhaps this is due to Github codespace's Linux environment, I will have to look into it more to find out.
-- Attempted to implement Continuous Integration using GitHub Actions.
-  - Currently running into issues with OS presets not being recognized.
+- Completed implimentation of Continuous Integration using GitHub Actions.
+  - Ran into issues with OS presets not being recognized (FIXED)
+  - Currently, whenever a commit is pushed to "main" the CI Action will build and export a release of the game which are located under "releases".
 - Completed Fishing and Patrol Boat movement for both players. (Non-Collision)
   - Boats can move using arrow keys whenever a player's cursor is placed over the boat that the player owns.
 - **Plans:**
