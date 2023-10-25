@@ -8,12 +8,15 @@ ___
 - Design, delegate, and begin implementation of random weather events.
 
 #### **Progress:**
-- Congregated for a 27 minute meeting to discuss the project's progression and future plans.
+- Congregated for a 27-minute meeting to discuss the project's progression and future plans.
+- Completed some of the functionalities of the in-game objects.
+- Experimented with Godot build systems, CI implementation, and testing tools.
 
 #### **Plans:**
 - Complete isolated mechanics of individual game objects.
   - Isolated mechanics refers to mechanics specific to each object. Other mechanics, such as weather events damaging objects, will be added after the weather event's implementation.
 - Design, delegate, and begin implementation of random weather events.
+- Implement CI and testing frameworks for Godot.
 
 #
 ### Individual Contributions:
