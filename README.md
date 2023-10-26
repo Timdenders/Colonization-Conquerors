@@ -274,6 +274,12 @@ We believe the optimal moment to seek external assistance is during the initial 
 - Extend the Tilemap to randomly generate different islands for users to play on.
 - Have two players be able to play from two different machines instead of from the same computer.
 
+**Continuous Integration Plan**
+To incorporate continuous integration into our Godot workflow, our team decided to do some research into GitHub Actions to see if there were any pre-existing frameworks out there that we could use for our project. Soon after we began our search, we stumbled upon a number of workflows related to Godot in the Action's Marketplace. We decided on "Godot Export" version 5.2.0, which provided a way for us to simply set up an export_preset.cfg file from the Godot engine. After this, we would simply need to place the contents of the latest build of our project on GitHub before running the workflow Action to update the "release" which returns in the form of a windows.exe file. This executable can then be downloaded and run from a Windows machine.
+
+**Testing Plan**
+
+
 **Documentation Plan**
 
 When exploring our game's inspiration, the 1982 classic, Utopia, all of our team members had a similar thought, "What exactly is going on here?" After finding a PDF manual for the Intelevisiion game, many of our questions were answered, but not all of them. The original game's manual never went into detail about the exact relationship between player objects, currency, population density, population satisfaction, or points. The explanations were somewhat vague as to exactly what numerically leads to what. In light of this, our team decided that our game would come with a much more in-depth user guide that we plan to integrate right into the game that players can access at any time.
