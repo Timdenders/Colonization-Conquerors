@@ -52,6 +52,7 @@ var sailing_mode = true
 var user_one = "Player One"
 var user_two = "Player Two"
 
+# This is a test comment
 # This function is called when the player confirms an action in the confirmation dialog.
 # It sets the "place_obj" flag to true, indicating that the player intends to place an object
 # on the tilemap.
