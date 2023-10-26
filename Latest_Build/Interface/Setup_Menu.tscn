@@ -1,0 +1,118 @@
+[gd_scene load_steps=7 format=3 uid="uid://dhp6mmh0xbejc"]
+
+[ext_resource type="Script" path="res://Scripts/Setup_Menu.gd" id="1_ihbio"]
+[ext_resource type="FontFile" uid="uid://vby6ekbxg8dy" path="res://Fonts/PatuaOne_Regular.ttf" id="2_oqk6u"]
+[ext_resource type="Script" path="res://Scripts/SM_Input_1.gd" id="3_n11e2"]
+[ext_resource type="Script" path="res://Scripts/SM_Input_2.gd" id="4_jh2ej"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2f6il"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_17k6x"]
+
+[node name="SMControl" type="Control"]
+layout_mode = 3
+anchor_right = 1.667
+anchor_bottom = 1.667
+offset_right = -1280.64
+offset_bottom = -720.36
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ihbio")
+
+[node name="SMBackground" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0.294118, 0.407843, 0.721569, 1)
+
+[node name="SMMarginContainer1" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_top = 208.0
+offset_right = 1920.0
+offset_bottom = 270.0
+
+[node name="SMVBoxContainer1" type="VBoxContainer" parent="SMMarginContainer1"]
+layout_mode = 2
+
+[node name="SMLabel1" type="Label" parent="SMMarginContainer1/SMVBoxContainer1"]
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_oqk6u")
+theme_override_font_sizes/font_size = 48
+text = "Term of office:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SMMarginContainer2" type="MarginContainer" parent="."]
+layout_mode = 2
+offset_left = 846.0
+offset_top = 405.0
+offset_right = 1074.0
+offset_bottom = 467.0
+
+[node name="SMVBoxContainer2" type="VBoxContainer" parent="SMMarginContainer2"]
+layout_mode = 2
+
+[node name="SMInput1" type="LineEdit" parent="SMMarginContainer2/SMVBoxContainer2"]
+layout_mode = 2
+focus_next = NodePath(".")
+focus_previous = NodePath(".")
+mouse_filter = 2
+theme_override_fonts/font = ExtResource("2_oqk6u")
+theme_override_font_sizes/font_size = 44
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2f6il")
+placeholder_text = "Enter Here"
+alignment = 1
+max_length = 2
+context_menu_enabled = false
+selecting_enabled = false
+flat = true
+caret_blink = true
+script = ExtResource("3_n11e2")
+
+[node name="SMMarginContainer3" type="MarginContainer" parent="."]
+layout_mode = 2
+offset_top = 613.0
+offset_right = 1920.0
+offset_bottom = 675.0
+
+[node name="SMVBoxContainer3" type="VBoxContainer" parent="SMMarginContainer3"]
+layout_mode = 2
+
+[node name="SMLabel2" type="Label" parent="SMMarginContainer3/SMVBoxContainer3"]
+visible = false
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_oqk6u")
+theme_override_font_sizes/font_size = 48
+text = "Length of round:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SMMarginContainer4" type="MarginContainer" parent="."]
+layout_mode = 2
+offset_left = 846.0
+offset_top = 810.0
+offset_right = 1074.0
+offset_bottom = 872.0
+
+[node name="SMVBoxContainer4" type="VBoxContainer" parent="SMMarginContainer4"]
+layout_mode = 2
+
+[node name="SMInput2" type="LineEdit" parent="SMMarginContainer4/SMVBoxContainer4"]
+visible = false
+layout_mode = 2
+focus_next = NodePath(".")
+focus_previous = NodePath(".")
+mouse_filter = 2
+theme_override_fonts/font = ExtResource("2_oqk6u")
+theme_override_font_sizes/font_size = 44
+theme_override_styles/focus = SubResource("StyleBoxEmpty_17k6x")
+placeholder_text = "Enter Here"
+alignment = 1
+max_length = 3
+context_menu_enabled = false
+selecting_enabled = false
+flat = true
+caret_blink = true
+script = ExtResource("4_jh2ej")
