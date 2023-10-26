@@ -275,10 +275,18 @@ We believe the optimal moment to seek external assistance is during the initial 
 - Have two players be able to play from two different machines instead of from the same computer.
 
 **Continuous Integration Plan**
-To incorporate continuous integration into our Godot workflow, our team decided to do some research into GitHub Actions to see if there were any pre-existing frameworks out there that we could use for our project. Soon after we began our search, we stumbled upon a number of workflows related to Godot in the Action's Marketplace. We decided on "Godot Export" version 5.2.0, which provided a way for us to simply set up an export_preset.cfg file from the Godot engine. After this, we would simply need to place the contents of the latest build of our project on GitHub before running the workflow Action to update the "release" which returns in the form of a windows.exe file. This executable can then be downloaded and run from a Windows machine.
+
+To incorporate continuous integration into our Godot workflow, our team decided to do some research into GitHub Actions to see if there were any pre-existing frameworks out there that we could use for our project. Soon after we began our search, we stumbled upon a number of workflows related to Godot in the Action's Marketplace. We decided on "Godot Export" version 5.2.0, which provided a way for us to simply set up an export_preset.cfg file from the Godot engine. After this, we would simply need to place the contents of the latest build of our project on GitHub before running the workflow Action to update the "release" which returns in the form of a windows.exe file. This executable can then be downloaded and run from a Windows machine. This workflow is set up to run whenever the contents of the directory, "Latest_Build" is pushed.
 
 **Testing Plan**
 
+For our automated testing plan, we decided to use a similar approach to our continuous integration implementation. Using the Godot testing tool, known as GUT (Godot Unit Tests), we plan on implementing a GitHub Actions workflow from the Marketplace called, "Godot GUT CI." With this workflow, we can execute a test file containing a number of unit tests covering several aspects of our code. 
+
+Some of these unit tests will include:
+- Score updates
+- Currency updates
+- Changes in coordinate positions of players/objects
+- Damaging of objects
 
 **Documentation Plan**
 
