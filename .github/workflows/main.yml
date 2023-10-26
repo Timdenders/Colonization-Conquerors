@@ -2,12 +2,8 @@ name: CI
 
 on:
   push:
-    branches: 
-      - main
-      - 'Latest_Build/**'
-  pull_request:
-    branches: [main]
-
+    paths:
+      - 'Latest_buld/**'
   workflow_dispatch:
 
 jobs:
