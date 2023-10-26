@@ -4,11 +4,11 @@ on:
   push:
     branches: ['main']
     paths: 
-      - 'Latest_Build/**'
+      - 'test_build/**'
   pull_request:
     branches: ['main']
     paths: 
-      - 'Latest_Build/**'
+      - 'test_build/**'
     
   workflow_dispatch:
 
@@ -24,3 +24,4 @@ jobs:
         uses: ceceppa/godot-gut-ci@master
         with:
           godot_version: 4.1.1
+          gut_params: -gdir=res://tests/unit/
