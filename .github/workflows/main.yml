@@ -3,10 +3,12 @@ name: CI
 on:
   push:
     branches: ['main']
-    paths: ['Latest_buld/**']
+    paths: 
+      - 'Latest_Build/**'
   pull_request:
     branches: ['main']
-    paths: ['Latest_buld/**']
+    paths: 
+      - 'Latest_Build/**'
     
   workflow_dispatch:
 
