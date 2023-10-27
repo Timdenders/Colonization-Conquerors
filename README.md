@@ -289,6 +289,20 @@ The user guide will include:
 ___
 ### **Continuous Integration Plan**
 
+When deciding what CI service to use, we first decided to research how some other Godot developers implemented CI for both building releases and running automated unit testing. From our findings, it seemed like the vast majority of people used either GitHub Actions on their own or GitLab as an external CI service that would run on some development trigger from GitHub. The following shows some pros and cons between the two that we found while considering our options:
+
+|       **GITHUB ACTIONS**        |           **GITLAB**            |
+|---------------------------------|---------------------------------|
+|            **PROS:**            |            **PROS:**            |
+| Integrated into GitHub by Default | Can use source code not just from GitHub |
+| Simple YMAL file format | More flexible Docker file customization |
+| Many Free Resources | Comes with a fair amount of free resources |
+| Supports our OS Build | Built-in container registry for Docker files |
+|            **CONS:**            |            **CONS:**            |
+| Limited to GitHub | Less free resources to work with |
+| Complex Docker Containers | Complex Docker Containers |
+| May be dependent on other services for good CI | More complex YMAL file format |
+
 **Automated Release System:**
 
 To incorporate continuous integration into our Godot workflow, our team decided to do some research into GitHub Actions to see if there were any pre-existing frameworks out there that we could use for our project. Soon after we began our search, we stumbled upon a number of workflows related to Godot in the Action's Marketplace. We decided on "Godot Export" version 5.2.0, which provided a way for us to simply set up an export_preset.cfg file from the Godot editor for our target OS, Windows, as well as a Linux release. The GitHub workflow is set up to run whenever the contents of the directory, "Latest_Build" is pushed. After this, we would simply need to place the contents of the latest build of our project on GitHub before running the workflow Action to update the "release" which returns in the form of a windows.exe and Linux.x86_64 files. These files can then be easily downloaded and ran from other PCs as a runnable video game, though at the moment potential players will need to tell Windows that the game is safe to open in order to run the Windows executable file. 
