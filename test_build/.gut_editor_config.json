@@ -1,11 +1,11 @@
 {
- "background_color": "262626ff",
+ "background_color": "26262600",
  "compact_mode": false,
- "config_file": "res://.gutconfig.json",
+ "config_file": "res://.gut_editor_config.json",
  "dirs": [
-  "res://tests/unit"
+  "res://test/"
  ],
- "disable_colors": false,
+ "disable_colors": true,
  "double_strategy": 1,
  "errors_do_not_cause_failure": false,
  "font_color": "ccccccff",
@@ -33,7 +33,7 @@
  },
  "post_run_script": "",
  "pre_run_script": "",
- "prefix": "test_",
+ "prefix": "",
  "selected": null,
  "should_exit": false,
  "should_exit_on_success": false,
