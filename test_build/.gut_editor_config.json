@@ -3,7 +3,7 @@
  "compact_mode": false,
  "config_file": "res://.gut_editor_config.json",
  "dirs": [
-  "res://test/"
+  "res://tests/"
  ],
  "disable_colors": true,
  "double_strategy": 1,
