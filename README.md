@@ -303,6 +303,8 @@ With this workflow, we expected to easily be able to execute a file containing a
 
 While our team can still make do with running our unit tests on our local Godot editors, our goal is to have an automated system that would work alongside our automated release system to help guarantee a functional release with the actions both triggering after every commit to the Latest_Build directory. 
 
+NOTE: Since we are having issues with our GUT implementation, one might ask why we do not attempt to use some other services other than GitHub Actions. While we are not opposed to trying an alternative method, as was previously stated, most of the resources on the internet utilize some implementation of GUT in their Godot testing framework. Whether it be GUT with GitHub Actions, GUT with GitLab, or GUT with some other service, these resources very frequently go back to GUT whenever Godot unit testing is involved. Suffice it to say, that GUT will likely have to be involved in our automated testing system in one way or another. That said, our team plans to continue looking for ways to either make GUT work for us or for some alternative if GUT continues to give us issues.
+
 Some of the unit tests we plan to incorperate include tests related to:
 - Score updates
 - Currency updates
