@@ -1,25 +1,21 @@
-name: 'Godot GUT CI'
-description: 'Run Godot GUT tests on CI'
-branding:
-  icon: alert-triangle
-  color: gray-dark
+name: "Run GUT Tests"
+description: "Run GUT tests for a Godot project"
+author: "josephbmanley"
 inputs:
-  godot_version:
-    description: 'Godot Version'
-    required: false
-    default: '3.5.1'
-  gut_params:
-    description: 'GUT parameters (https://github.com/bitwes/Gut/wiki/Command-Line)'
-    required: false
-    default: -gdir=res://tests
-  project_path:
-    description: 'test_build'
-    required: false
-    default: ''
+  containerImage:
+    description: "The container to run tests inside of."
+    default: "barichello/godot-ci:latest"
+  useContainer:
+    description: "Boolean value of whether or not to run container."
+    default: true
+  godotExecutable:
+    description: "Path of Godot binary to call when running GUT tests."
+    default: godot
+  directory:
+    description: "The name directory to run tests in."
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - ${{ inputs.godot_version }}
-    - ${{ inputs.gut_params }}
-    - ${{ inputs.project_path }}
+  using: "node12"
+  main: "dist/index.js"
+branding:
+  icon: cpu
+  color: yellow

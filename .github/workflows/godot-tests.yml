@@ -7,19 +7,26 @@ on:
       - main
 
 jobs:
-  test:
-    name: Run Unit Tests
+  test_1:
+    name: "Test Action with Container"
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
+    - name: Checkout
       uses: actions/checkout@v2
-
-    - name: Set up Godot
-      uses: ceceppa/godot-gut-ci@main
+    - name: Run Action
+      uses: ./
       with:
-        godot_version: '4.1.1'
-        project_path: 'test_build'
-
-    - name: Run Unit Tests
-      run: godot -s "addons/Gut/gut_cmdln.gd" --path "test_build" --exit
+        directory: test_build
+  test_2:
+    name: "Test Action Locally"
+    runs-on: ubuntu-latest
+    container:
+      image: barichello/godot-ci:latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Run Action
+      uses: ./
+      with:
+        directory: test_build
+        useContainer: false
