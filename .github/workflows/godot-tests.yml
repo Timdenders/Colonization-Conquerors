@@ -18,7 +18,8 @@ jobs:
     - name: Set up Godot
       uses: ceceppa/godot-gut-ci@main
       with:
-        engine_version: '4.1.1'
+        godot_version: '4.1.1'
+        project_path: 'test_build'
 
     - name: Run Unit Tests
       run: godot -s "addons/Gut/gut_cmdln.gd" --path "test_build" --exit
