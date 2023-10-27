@@ -16,7 +16,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Set up Godot
-      uses: Gramps/Godot-Engine@v1
+      uses: ceceppa/godot-gut-ci@main
       with:
         engine_version: '4.1.1'
 
