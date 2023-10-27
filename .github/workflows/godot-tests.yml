@@ -1,27 +1,24 @@
 
-name: "godot gut test"
+name: Godot Unit Testing
+
 on:
   push:
-    branches: ['main']
-    paths: 
-      - 'test_build/**'
-  pull_request:
-    branches: ['main']
-    paths: 
-      - 'test_build/**'
-    
-  workflow_dispatch:
+    branches:
+      - main
 
 jobs:
-    execute-gut:
-      name: Run GUT tests
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout
-          uses: actions/checkout@v3.3.0
-  
-        - name: Docker test
-          uses: ceceppa/godot-gut-ci@main
-          with:
-            godot_version: 4.1.1
-            gut_params: -gdir=res://test -gsuffix=.gd
+  test:
+    name: Run Unit Tests
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Godot
+      uses: Gramps/Godot-Engine@v1
+      with:
+        engine_version: '4.1.1'
+
+    - name: Run Unit Tests
+      run: godot -s "addons/Gut/gut_cmdln.gd" --path "test_build" --exit
