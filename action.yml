@@ -7,7 +7,7 @@ inputs:
   godot_version:
     description: 'Godot Version'
     required: false
-    default: '4.1.1'
+    default: '3.5.1'
   gut_params:
     description: 'GUT parameters (https://github.com/bitwes/Gut/wiki/Command-Line)'
     required: false
