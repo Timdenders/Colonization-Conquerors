@@ -1,0 +1,42 @@
+image: barichello/godot-ci:4.1.1
+
+stages:
+  - export
+  - deploy
+  - tests
+
+before_script:
+  - mkdir -v -p build/linux
+  - mkdir -v -p build/windows
+
+unitTests:
+  stage: tests
+  script:
+    - cd test_build
+    - godot -s addons/gut/gut_cmdln.gd -d --path $PWD -ginclude_subdirs -gdir=res://test -gexit -gprefix=test_
+
+linux:
+  stage: export
+  script:
+    - cd test_build
+    - godot -v --export "Linux/X11" ../../build/linux/$EXPORT_NAME.x86_64
+    - test -e ../../build/linux/$EXPORT_NAME.x86_64
+  artifacts:
+    name: $EXPORT_NAME-$CI_JOB_NAME
+    paths:
+      - build/linux
+  only:
+      - release
+
+windows:
+  stage: export
+  script:
+    - cd test_build
+    - godot -v --export "WindowsDesktop" ../../build/windows/$EXPORT_NAME.exe
+    - test -e ../../build/windows/$EXPORT_NAME.exe
+  artifacts:
+    name: $EXPORT_NAME-$CI_JOB_NAME
+    paths:
+      - build/windows
+  only:
+      - release
