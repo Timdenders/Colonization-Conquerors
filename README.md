@@ -277,7 +277,7 @@ ___
 - Extend the Tilemap to randomly generate different islands for users to play on.
 - Have two players be able to play from two different machines instead of from the same computer.
 ___
-## **Continuous Integration Plan**
+### **Continuous Integration Plan**
 
 **Automated Release System:**
 
