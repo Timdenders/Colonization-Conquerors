@@ -13,16 +13,15 @@ on:
   workflow_dispatch:
 
 jobs:
-    gut-godot4:
-      name: Run GUT tests for Godot 4
+    execute-gut:
+      name: Run GUT tests
       runs-on: ubuntu-latest
       steps:
         - name: Checkout
           uses: actions/checkout@v3.3.0
   
-        - name: Godot GUT CI Test
-          uses: ./
+        - name: Docker test
+          uses: ceceppa/godot-gut-ci@main
           with:
             godot_version: 4.1.1
-            gut_params: -gdir=res://test/unit
-            project_path: test_build
+            gut_params: -gdir=res://test -gsuffix=.gd
