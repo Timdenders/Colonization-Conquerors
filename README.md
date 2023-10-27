@@ -277,6 +277,16 @@ ___
 - Extend the Tilemap to randomly generate different islands for users to play on.
 - Have two players be able to play from two different machines instead of from the same computer.
 ___
+### **Documentation Plan**
+
+When exploring our game's inspiration, the 1982 classic, Utopia, all of our team members had a similar thought, "What exactly is going on here?" After finding a PDF manual for the Intelevisiion game, many of our questions were answered, but not all of them. The original game's manual never went into detail about the exact relationship between player objects, currency, population density, population satisfaction, or points. The explanations were somewhat vague as to exactly what numerically leads to what. In light of this, our team decided that our game would come with a much more in-depth user guide that we plan to integrate right into the game that players can access at any time.
+
+The user guide will include:
+- Objective of the game.
+- A list of objects and their functions.
+- A list of game events and their functions.
+- A clear explanation of how our team decided to handle the relationship between population, currency, and the point system.
+___
 ### **Continuous Integration Plan**
 
 **Automated Release System:**
@@ -297,7 +307,12 @@ GitHub Marketplace GUT Link: https://github.com/marketplace/actions/godot-gut-ci
 
 Godot engine/editor GUT Asset REPO Link: https://github.com/bitwes/Gut.git 
 
+Godot engine/editor GUT Asset Wiki Link: https://bitwes.github.io/GutWiki/Godot4/Home.html
+- Wiki Directory for GUT Unit Test Structure: https://bitwes.github.io/GutWiki/Godot4/Creating-Tests.html
+
 VSCode Godot-Extension for GUT REPO Link: https://github.com/bitwes/gut-extension.git (**NOTE:** requires Godot-Tools extension to work)
+
+The structure of our unit tests would follow the format shown in the provided wiki linked above. The implementation idea would be for any of our team members to, using the GUT test creation guide provided, simply add future unit tests to the test/unit/test_unit.gd script file in the Latest_Build directory. (**Note:** As we are still testing our GUT integration setup, we are currently using another copy of our latest build in a separate directory called, test_build. This way, we can add, remove, or alter dependency files without risk to our working automated release system.)
 
 With this workflow, we expected to easily be able to execute a file containing a number of unit tests covering several aspects of our code's position checking and numerical updates. This way we would know if any future commit disrupts our system or not. In practice, however, we ran into a number of issues with our attempts at implementing this automated testing framework. Despite the GUT addons working perfectly in the Godot editor, using a guide provided by the repository to run the tests in VSCode, so far, has not gone smoothly as issues with access permissions and lost files whose file paths seem to be clearly defined run rampant in our implementation attempts. Attempting the same in GitHub using the yml file guide provided by GUT also ended in failure for similar reasons. 
 
@@ -310,13 +325,3 @@ Some of the unit tests we plan to incorperate include tests related to:
 - Currency updates
 - Changes in coordinate positions of players/objects
 - Damaging of objects
-___
-### **Documentation Plan**
-
-When exploring our game's inspiration, the 1982 classic, Utopia, all of our team members had a similar thought, "What exactly is going on here?" After finding a PDF manual for the Intelevisiion game, many of our questions were answered, but not all of them. The original game's manual never went into detail about the exact relationship between player objects, currency, population density, population satisfaction, or points. The explanations were somewhat vague as to exactly what numerically leads to what. In light of this, our team decided that our game would come with a much more in-depth user guide that we plan to integrate right into the game that players can access at any time.
-
-The user guide will include:
-- Objective of the game.
-- A list of objects and their functions.
-- A list of game events and their functions.
-- A clear explanation of how our team decided to handle the relationship between population, currency, and the point system.
