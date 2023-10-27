@@ -1,11 +1,11 @@
 # Colonization Conquerors
-### Repository Contents:
+## Repository Contents:
 - Source Code: The heart of our project lies here, where we've meticulously crafted the game's functionality and mechanics.
 - README: This document provides an overview of the project, team information, major features, stretch goals, use cases, non-functional requirements, and more. It serves as your guide to Colonization Conquerors.
 - Weekly Reports: Our weekly reports detail our progress and accomplishments, helping you stay up to date with our development journey.
 - Projects: The Projects page outlines our scheduled tasks, assignments, and responsibilities for each team member, offering insight into our project's ongoing development.
 ___
-### Overview:
+## Overview:
 An ongoing project aimed at developing a game that replicates the gameplay of the classic 1982 game, Utopia.
 
 ### Team Members:
@@ -13,16 +13,16 @@ An ongoing project aimed at developing a game that replicates the gameplay of th
 - Grant Palmieri (Game Programmer, Game Tester)
 - Joshua Murillo (Game Programmer, Audio Engineer)
 - Zachary Thomas (Game Programmer, Technical Writer)
-
-**Communication**
+___
+### **Communication**
 
 - Private: Penn State University – Microsoft Teams, Email, Canvas
   - Throughout the course of this project’s development, the members of our team will actively communicate with each other about the design and production of the Colonization Conquerors video game.
 
 ### Product Description:
 Colonization Conquerors is set to be developed as a turn-based strategy PC game inspired by the classic Utopia (1982). The game revolves around building and creating a civilization, resource management, and competitive gameplay to win matches. It aims to blend the nostalgia of Utopia's core gameplay with different visuals, and user experience enhancements.
-
-**Major Features**
+___
+### **Major Features**
 
 - Island Development:
   - Players can create and advance their island through the construction of diverse structures, including crops, factories, and forts. Each of these structures serves distinct functions, such as sustaining the population, generating revenue, or fortifying against potential attacks.
@@ -32,16 +32,17 @@ Colonization Conquerors is set to be developed as a turn-based strategy PC game 
   - "Colonization Conquerors" delivers a local two-player competitive gaming experience, enabling players to fund rebel activities on their opponent's island and incite confrontations between their PT boats and the rival's fishing boats.
 - Natural Disasters & Events:
   - Random disasters and events can occur in the game, adding an element of unpredictability. These events, such as rain storms or hurricanes, can have both positive and negative effects on a player's construction.
-
-**Stretch Goals**
+___
+### **Stretch Goals**
 
 - User Interface Enhancements:
   - An intuitive and visually appealing user interface with clear navigation.
   - Leaderboards to showcase player rankings and scores.
 - Discord Integration:
   - Incorporate an online multiplayer dimension into the game, where a third player assumes the role of the "Gamemaster" responsible for orchestrating dynamic events. The Gamemaster can wield control over various in-game parameters, such as adjusting construction costs, and weather occurrence rates, using Discord as a medium for these modifications.
+___
+## Software Architecture:
 
-### Software Architecture:
 **Overview of the System**
 
 In our Godot game project, the major software components include:
@@ -51,18 +52,18 @@ In our Godot game project, the major software components include:
 - Global Data Component: A singleton script that stores global variables and settings, facilitating data sharing between different parts of the game.
 - Scoreboard Component: Manages UI elements for displaying player scores, round timers, and other game-related information.
 - Input Validation Component: Handles input validation for text input fields, ensuring correct user input within the game.
-
-**Interfaces Between Components**
+___
+### **Interfaces Between Components**
 
 - The setup menu component communicates with the gameplay component to start and manage game rounds.
 - The world component interacts with the global data component to store and retrieve game-related data.
 - The scoreboard component updates its UI based on data provided by the world component.
-
-**Data Storage**
+___
+### **Data Storage**
 
 We do not currently use a database in our game project. Instead, we store data within the game engine's runtime memory.
-
-**Alternative Architectural Decisions**
+___
+### **Alternative Architectural Decisions**
 
 Client-Server Architecture: An alternative approach could involve implementing a client-server architecture with the integration of Discord API to enable players to interact with the game through a Discord bot.
 
@@ -79,8 +80,9 @@ Pro
 
 Con
   - Security Concerns: Securing player data within the database is essential, as it should only be accessible to the developers and not to any unauthorized individuals.
-
+___
 ### Software Design:
+
 **Component Definitions**
 
 - Setup Menu Component: Consists of UI elements and logic for displaying and handling the setup menu. Key classes and elements include Setup_Menu.gd, labels, and user input handlers.
@@ -88,20 +90,20 @@ Con
 - Global Data Component: A singleton script with a single class Global.gd, responsible for storing and managing global game data.
 - Scoreboard Component: Manages UI elements for displaying player information and a round timer. Key classes include Score_Board.gd and UI elements (labels and a timer).
 - Input Validation Component: Handles input validation for text input fields. Key classes include SM_Input_1.gd, SM_Input_2.gd, and the user input handlers.
-
-**Responsibilities**
+___
+### **Responsibilities**
 
 - Setup Menu Component: The setup menu labels offer guidance regarding the expected input for the user input handlers.
 - World Component: TileMapWorld is a tile map, rendering game sprites, and its behavior is managed by the TileMap.gd class, which handles changes triggered by both system processes and player input.
 - Global Data Component: Comprises global variables that receive input from the player via the Setup Menu Component and World Component, as well as a global variable designed to indicate the conclusion of a match.
 - Scoreboard Component: The user interface displays various labels for each player, presenting information such as their current scores, total scores, the remaining number of rounds, and a countdown timer for the current round. The timer dynamically updates the time remaining on the current round label.
 - Input Validation Component: This guarantees that user input in the Setup Menu Component is accurately captured as intended.
-
+___
 ### Coding Guidelines:
 For GDScript, we follow the official Godot Engine GDScript style guide available at GDScript Style Guide.
 - We chose this guideline to maintain a standardized and consistent codebase, making it easier to collaborate and maintain the project.
 - Team members will receive training and guidance on GDScript best practices and the GDScript style guide to ensure they are familiar with the standards.
-
+___
 ### Use Cases (Functional Requirements):
 | Use Case 1    | Player Building & Island Development |
 | -------- | ------- |
@@ -132,32 +134,33 @@ For GDScript, we follow the official Godot Engine GDScript style guide available
 | List of Steps <br />(Success Scenario) | a. The player observes the impending storm cloud. <br />b. The player can either opt to move their boat to a different <br />location and/or proactively construct newer structures in a <br />distant area to avoid potential obstacles.|
 | Extensions/Variations <br />of the Success Scenario | The outcome of the natural disaster can vary based on <br />the player’s preparations. |
 | Exceptions: Failure <br />Conditions & Scenarios | Failure to act may result in a natural disaster <br />inflicting substantial damage upon the player’s <br />constructions. |
+___
+## Non-Functional Requirements:
 
-### Non-Functional Requirements:
-**User Support & Documentation**
+### **User Support & Documentation**
 
 - Provide clear and comprehensive in-game help and tutorials to assist new players.
-
-**Accessibility**
+___
+### **Accessibility**
 
 - Guarantee that the game accommodates players who desire customizable control features.
-
-**Security**
+___
+### **Security**
 
 - Implement security measures to prevent cheating or hacking.
 - Ensure data privacy for user information if Discord integration is utilized.
-
-### External Requirements:
+___
+## External Requirements:
 Given the game's aim to facilitate multiplayer competition and incorporate features like leaderboards, ensuring system stability is of paramount importance to our team. Preventing unintended user inputs that could potentially disrupt the game's integrity is crucial for a seamless gaming experience, whether played solo or with others.
 
 Furthermore, since our software will be available for download by users, it's imperative that individual users are unable to modify the program intentionally or accidentally in a manner that could disrupt the game environment.
 
 In addition to code stability, our team is committed to maintaining robust documentation. This approach ensures that our design and implementation processes remain well-organized. This organization, in turn, allows for easy reference to previous production steps and facilitates the onboarding of new team members, ensuring they are up to speed with the project's progress.
-
-### Team Process Description:
+___
+## Team Process Description:
 For our project, we have chosen Godot as our game engine because of its exceptional beginner-friendliness for crafting 2D games, complemented by its integrated networking capabilities. We will primarily use GDScript in Godot for our coding tasks since it closely resembles Python, a language the team is proficient in. In terms of audio production, we will employ Audacity as our software of choice due to its user-friendly interface and fundamental feature set, which adequately fulfills our requirements. Each team member's role has been thoughtfully assigned based on their individual skill sets and aptitude, ensuring that they are best equipped to contribute effectively to the project's success.
-
-**Top Five Major Risks**
+___
+### **Top Five Major Risks**
 
 Not focusing on what matters:
 
@@ -194,8 +197,8 @@ Time constraints:
 - One of the largest issues plaguing the progression of our project is time. Whether it be a lack of time for individual members to complete tasks on schedule, or schedules not lining up for meetings where issues like scheduling would normally be dealt with, time has been the most unpredictable and impactful issue that poses the greatest risk towards the completion of this project.
 - Ultimately, every other risk mentioned ends up dealing with a loss of time or productivity. The less time we are able to spend on the project, the higher the likelihood of us having to cut features from the game, or lowering the quality of the features we need to have in the long run.
 - The only way to mitigate this risk is by taking the necessary steps to mitigate the previously described risks. This way, we can maximize the amount of time and the productivity of that used time towards completing the project up to the standards that we originally envisioned.
-
-**Schedule**
+___
+### **Schedule**
 
 - To execute this project concept, our team will need to follow a series of sequential steps that will guide us toward the successful completion of Colonization Conquerors. These steps encompass:
 
@@ -213,8 +216,8 @@ Time constraints:
 | 11/12/23 - 11/18/23 | Continue working on extra features |
 | 11/19/23 - 11/25/23 | Finalization of documentation |
 | 11/26/23 - 12/2/23 | Finalization of Colonization Conquerors |
-
-**Major Milestones**
+___
+### **Major Milestones**
 
 Creation of the Colonization Conquerors Prototype:
 
@@ -249,8 +252,8 @@ Finalization of the Colonization Conquerors video game:
 
 - Finalize the design of the UI.
 - Clean up in-game object interactions and related code to provide a smoother experience.
-
-**Team Structure**
+___
+### **Team Structure**
 
 - Timothy Enders
   - Game Programmer (responsible for coding and implementing the software and functionality of the game)
@@ -264,31 +267,49 @@ Finalization of the Colonization Conquerors video game:
 - Zachary Thomas
   - Game Programmer (responsible for coding and implementing the software and functionality of the game)
   - Technical Writer (creates clear and comprehensive documentation, user manuals, and guides to help players understand and navigate the game effectively)
-
-**External Feedback**
+___
+### **External Feedback**
 
 We believe the optimal moment to seek external assistance is during the initial testing phase, as it allows for potential refinements if certain aspects do not resonate with the audience. The most effective approach to gathering this input is by involving external individuals to playtest the game and share their feedback and impressions.
-
-**Current Feedback**
+___
+### **Current Feedback**
 
 - Extend the Tilemap to randomly generate different islands for users to play on.
 - Have two players be able to play from two different machines instead of from the same computer.
+___
+## **Continuous Integration Plan**
 
-**Continuous Integration Plan**
+**Automated Release System:**
 
-To incorporate continuous integration into our Godot workflow, our team decided to do some research into GitHub Actions to see if there were any pre-existing frameworks out there that we could use for our project. Soon after we began our search, we stumbled upon a number of workflows related to Godot in the Action's Marketplace. We decided on "Godot Export" version 5.2.0, which provided a way for us to simply set up an export_preset.cfg file from the Godot engine. After this, we would simply need to place the contents of the latest build of our project on GitHub before running the workflow Action to update the "release" which returns in the form of a windows.exe file. This executable can then be downloaded and run from a Windows machine. This workflow is set up to run whenever the contents of the directory, "Latest_Build" is pushed.
+To incorporate continuous integration into our Godot workflow, our team decided to do some research into GitHub Actions to see if there were any pre-existing frameworks out there that we could use for our project. Soon after we began our search, we stumbled upon a number of workflows related to Godot in the Action's Marketplace. We decided on "Godot Export" version 5.2.0, which provided a way for us to simply set up an export_preset.cfg file from the Godot editor for our target OS, Windows. After this, we would simply need to place the contents of the latest build of our project on GitHub before running the workflow Action to update the "release" which returns in the form of a windows.exe file. This executable can then be downloaded and run from a Windows machine. This workflow is set up to run whenever the contents of the directory, "Latest_Build" is pushed.
 
-**Testing Plan**
+The implementation of our auto-release system began with a video tutorial by a YouTuber called, FinePointCGI. After reviewing this video, we decided to locate his repository to view the yml and preset configuration files he used in order to analyze them and curate them to our own project and engine version. 
 
-For our automated testing plan, we decided to use a similar approach to our continuous integration implementation. Using the Godot testing tool, known as GUT (Godot Unit Tests), we plan on implementing a GitHub Actions workflow from the Marketplace called, "Godot GUT CI." With this workflow, we can execute a test file containing a number of unit tests covering several aspects of our code. 
+Release CI Video Link: https://youtu.be/bIXBosDO6f8
 
-Some of these unit tests will include:
+Release CI REPO Link: https://github.com/finepointcgi/Creating-a-Celeste-Like-Character-Controller.git
+
+**Automated Testing System:**
+
+For our automated testing plan, we decided to use a similar approach to our continuous integration implementation by using GitHub Actions to run through a number of unit tests upon Latest_Build commits. After some research, it seemed as though everyone on the internet recommended using the Godot testing tool, known as GUT (Godot Unit Tests). This tool is not built into Godot, instead, it is an extension that can be found in the Godot engine's "Asset Library." We originally planned on implementing a GitHub Actions workflow from the Marketplace called, "Godot GUT CI." 
+
+GitHub Marketplace GUT Link: https://github.com/marketplace/actions/godot-gut-ci 
+
+Godot engine/editor GUT Asset REPO Link: https://github.com/bitwes/Gut.git 
+
+VSCode Godot-Extension for GUT REPO Link: https://github.com/bitwes/gut-extension.git (NOTE: requires Godot-Tools extension to work)
+
+With this workflow, we expected to easily be able to execute a file containing a number of unit tests covering several aspects of our code's position checking and numerical updates. This way we would know if any future commit disrupts our system or not. In practice, however, we ran into a number of issues with our attempts at implementing this automated testing framework. Despite the GUT addons working perfectly in the Godot editor, using a guide provided by the repository to run the tests in VSCode, so far, has not gone smoothly as issues with access permissions and lost files whose file paths seem to be clearly defined run rampant in our implementation attempts. Attempting the same in GitHub using the yml file guide provided by GUT also ended in failure for similar reasons. 
+
+While our team can still make do with running our unit tests on our local Godot editors, our goal is to have an automated system that would work alongside our automated release system to help guarantee a functional release with every commit. 
+
+Some of the unit tests we plan to incorperate include test related to:
 - Score updates
 - Currency updates
 - Changes in coordinate positions of players/objects
 - Damaging of objects
-
-**Documentation Plan**
+___
+### **Documentation Plan**
 
 When exploring our game's inspiration, the 1982 classic, Utopia, all of our team members had a similar thought, "What exactly is going on here?" After finding a PDF manual for the Intelevisiion game, many of our questions were answered, but not all of them. The original game's manual never went into detail about the exact relationship between player objects, currency, population density, population satisfaction, or points. The explanations were somewhat vague as to exactly what numerically leads to what. In light of this, our team decided that our game would come with a much more in-depth user guide that we plan to integrate right into the game that players can access at any time.
 
