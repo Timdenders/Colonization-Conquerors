@@ -291,7 +291,7 @@ Release CI REPO Link: https://github.com/finepointcgi/Creating-a-Celeste-Like-Ch
 
 **Automated Testing System:**
 
-For our automated testing plan, we decided to use a similar approach to our continuous integration implementation by using GitHub Actions to run through a number of unit tests upon Latest_Build commits. After some research, it seemed as though everyone on the internet recommended using the Godot testing tool, known as GUT (Godot Unit Tests). This tool is not built into Godot, instead, it is an extension that can be found in the Godot engine's "Asset Library." We originally planned on implementing a GitHub Actions workflow from the Marketplace called, "Godot GUT CI." 
+For our automated testing plan, we decided to use a similar approach to our continuous integration implementation by using GitHub Actions to run through a number of unit tests upon Latest_Build commits. After some research, it seemed as though everyone on the internet recommended using the Godot testing tool, known as GUT (Godot Unit Tests). This tool is not pre-built into Godot, instead, it is an extension that can be found in the Godot engine's "Asset Library." We originally planned on implementing a GitHub Actions workflow from the Marketplace called, "Godot GUT CI." 
 
 GitHub Marketplace GUT Link: https://github.com/marketplace/actions/godot-gut-ci 
 
@@ -301,9 +301,9 @@ VSCode Godot-Extension for GUT REPO Link: https://github.com/bitwes/gut-extensio
 
 With this workflow, we expected to easily be able to execute a file containing a number of unit tests covering several aspects of our code's position checking and numerical updates. This way we would know if any future commit disrupts our system or not. In practice, however, we ran into a number of issues with our attempts at implementing this automated testing framework. Despite the GUT addons working perfectly in the Godot editor, using a guide provided by the repository to run the tests in VSCode, so far, has not gone smoothly as issues with access permissions and lost files whose file paths seem to be clearly defined run rampant in our implementation attempts. Attempting the same in GitHub using the yml file guide provided by GUT also ended in failure for similar reasons. 
 
-While our team can still make do with running our unit tests on our local Godot editors, our goal is to have an automated system that would work alongside our automated release system to help guarantee a functional release with every commit. 
+While our team can still make do with running our unit tests on our local Godot editors, our goal is to have an automated system that would work alongside our automated release system to help guarantee a functional release with the actions both triggering after every commit to the Latest_Build directory. 
 
-Some of the unit tests we plan to incorperate include test related to:
+Some of the unit tests we plan to incorperate include tests related to:
 - Score updates
 - Currency updates
 - Changes in coordinate positions of players/objects
