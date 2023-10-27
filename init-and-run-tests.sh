@@ -13,11 +13,11 @@ is_version_4=$( [[ $GODOT_VERSION == 4* ]] && echo "true" || echo "false" )
 if [[ $is_version_4 == "true" ]]; then
   echo "Downloading Godot4"
 
-  wget https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}-stable/Godot_v${GODOT_VERSION}-stable_linux.x86_64.zip
+  wget https://downloads.tuxfamily.org/godotengine/4.1.1/Godot_v4.1.1-stable_linux.x86_64.zip
 
   # Unzip it
-  unzip Godot_v${GODOT_VERSION}-stable_linux.x86_64.zip
-  mv Godot_v${GODOT_VERSION}-stable_linux.x86_64 $GODOT_BIN
+  unzip Godot_v4.1.1-stable_linux.x86_64.zip
+  mv Godot_v4.1.1-stable_linux.x86_64.zip $GODOT_BIN
   GODOT_PARAMS="--headless"
 else
   echo "Downloading Godot3"
