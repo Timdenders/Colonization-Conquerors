@@ -297,7 +297,7 @@ When deciding what CI service to use, we first decided to research how some othe
 | Integrated into GitHub by Default | Can use source code not just from GitHub |
 | Simple YMAL file format | More flexible Docker file customization |
 | Many Free Resources | Comes with a fair amount of free resources |
-| Supports our OS Build | Built-in container registry for Docker files |
+| Showcases a marketplace full of workflow templates | Built-in container registry for Docker files |
 |            **CONS:**            |            **CONS:**            |
 | Limited to GitHub | Less free resources to work with |
 | Complex Docker Containers | Complex Docker Containers |
