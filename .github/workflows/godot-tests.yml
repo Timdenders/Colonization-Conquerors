@@ -14,4 +14,4 @@ jobs:
           # The container to run tests inside of.
           containerImage: barichello/godot-ci:latest # optional, default is barichello/godot-ci:latest
           # The name directory to run tests in.
-          directory: test_build # optional
+
