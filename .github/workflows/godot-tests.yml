@@ -1,32 +1,17 @@
-
-name: Godot Unit Testing
-
-on:
-  push:
-    branches:
-      - main
+name: "godot gut ci test"
+on: push
 
 jobs:
-  test_1:
-    name: "Test Action with Container"
+  gut-godot4:
+    name: Run GUT tests for Godot 4
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Run Action
-      uses: ./
-      with:
-        directory: test_build
-  test_2:
-    name: "Test Action Locally"
-    runs-on: ubuntu-latest
-    container:
-      image: barichello/godot-ci:latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Run Action
-      uses: ./
-      with:
-        directory: test_build
-        useContainer: false
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Godot GUT CI Test
+        uses: ./
+        with:
+          godot_version: 4.1.1
+          gut_params: -gdir=res://tests/unit
+          project_path: test_build
