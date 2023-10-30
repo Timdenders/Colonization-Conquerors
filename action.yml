@@ -1,0 +1,25 @@
+name: 'Godot GUT CI'
+description: 'Run Godot GUT tests on CI'
+branding:
+  icon: alert-triangle
+  color: gray-dark
+inputs:
+  godot_version:
+    description: 'Godot Version'
+    required: false
+    default: '4.1.1'
+  gut_params:
+    description: 'GUT parameters (https://github.com/bitwes/Gut/wiki/Command-Line)'
+    required: false
+    default: -gdir=res://tests
+  project_path: 
+    description: 'The project path. To be specified only if is not in the root folder'
+    required: false
+    default: 'test_build'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.godot_version }}
+    - ${{ inputs.gut_params }}
+    - ${{ inputs.project_path }}
