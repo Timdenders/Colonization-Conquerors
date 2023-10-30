@@ -18,4 +18,4 @@ jobs:
           # Directory containing Gut tests
           test-dir: res://tests # optional, default is res://test
           # Full path to your GUT config file, e.g. 'res://<path>/<config>.json'.
-          config-file: res://.gutconfig.json # optional, default is res://.gutconfig.json
+          config-file: test_build/.gutconfig.json # optional, default is res://.gutconfig.json
