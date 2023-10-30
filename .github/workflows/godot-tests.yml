@@ -1,17 +1,21 @@
-name: "godot gut ci test"
+name: "godot gut test"
 on: push
 
 jobs:
-  gut-godot4:
-    name: Run GUT tests for Godot 4
+  execute-gut:
+    name: Run GUT tests
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Godot GUT CI Test
-        uses: ./
+      - name: godot-tester
+        # You may pin to the exact commit or the version.
+        # uses: croconut/godot-tester@c0b6cffca6fd87793334bdb9cac050228b43eb74
+        uses: croconut/godot-tester@v5.1
         with:
-          godot_version: 4.1.1
-          gut_params: -gdir=res://tests/unit
-          project_path: test_build
+          # Your Godot version number e.g. 3.2.2
+          version: 4.1.1 # default is 3.2.2
+          # Give relative path to your project.godot, if not in top level of repo
+          path: test_build # optional, default is ./
+          # Directory containing Gut tests
+          test-dir: res://tests # optional, default is res://test
+          # Full path to your GUT config file, e.g. 'res://<path>/<config>.json'.
+          config-file: res://.gutconfig.json # optional, default is res://.gutconfig.json
