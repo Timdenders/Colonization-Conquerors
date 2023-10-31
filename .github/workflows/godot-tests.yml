@@ -1,8 +1,11 @@
-name: ci-pr-example
+name: ci-testing
 run-name: ${{ github.head_ref || github.ref_name }}-ci-pr-example
 
 on:
-  pull_request:
+  push:
+    branches: ['main']
+    paths: 
+      - 'Latest_Build/**'
     paths-ignore:
       - '**.yml'
       - '**.md'
@@ -60,7 +63,7 @@ jobs:
         shell: bash
         run: |
           ${{ env.GODOT_BIN }} -e --path . -s res://addons/gdUnit4/bin/ProjectScanner.gd --headless --audio-driver Dummy
-        working-directory: ./test_build
+        working-directory: ./Latest_Build
 
       - name: "Run Unit Tests"
         if: ${{ !cancelled() }}
@@ -71,7 +74,7 @@ jobs:
         run: |
           chmod +x ./addons/gdUnit4/runtest.sh
           xvfb-run --auto-servernum ./addons/gdUnit4/runtest.sh --add "res://test" --audio-driver Dummy --display-driver x11 --rendering-driver opengl3 --screen 0 --continue
-        working-directory: ./test_build
+        working-directory: ./Latest_Build
 
       - name: "Publish Test Report"
         if: ${{ always() }}
@@ -81,7 +84,7 @@ jobs:
           path: "reports/**/results.xml"
           reporter: java-junit
           fail-on-error: 'false'
-          working-directory: ./test_build
+          working-directory: ./Latest_Build
 
       - name: "Upload Unit Test Reports"
         if: ${{ always() }}
