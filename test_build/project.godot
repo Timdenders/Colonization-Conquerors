@@ -30,7 +30,7 @@ mouse_cursor/custom_image="res://Textures/cc-mouse-pointer.png"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/gut/plugin.cfg")
+enabled=PackedStringArray("res://addons/gdUnit4/plugin.cfg")
 
 [filesystem]
 
