@@ -17,7 +17,7 @@ func text_submit_1(input):
 # Function to handle the submission of text in sm_input_2.
 func text_submit_2(input):
 	Global.length_of_round = int(input)
-	if Global.length_of_round >= 10 && Global.length_of_round <= 120:
+	if Global.length_of_round >= 30 && Global.length_of_round <= 120:
 		get_tree().change_scene_to_file("res://Interface/World.tscn")
 	else:
 		print("The 'Length of office' value must fall within the range of 30 to 120!")
