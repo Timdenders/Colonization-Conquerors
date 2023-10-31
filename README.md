@@ -305,9 +305,9 @@ When deciding what CI service to use, we first decided to research how some othe
 
 **Automated Release System:**
 
-To incorporate continuous integration into our Godot workflow, our team decided to do some research into GitHub Actions to see if there were any pre-existing frameworks out there that we could use for our project. Soon after we began our search, we stumbled upon a number of workflows related to Godot in the Action's Marketplace. We decided on "Godot Export" version 5.2.0, which provided a way for us to simply set up an export_preset.cfg file from the Godot editor for our target OS, Windows, as well as a Linux release. The GitHub workflow is set up to run whenever the contents of the directory, "Latest_Build" is pushed. After this, we would simply need to place the contents of the latest build of our project on GitHub before running the workflow Action to update the "release" which returns in the form of a windows.exe and Linux.x86_64 files. These files can then be easily downloaded and ran from other PCs as a runnable video game, though at the moment potential players will need to tell Windows that the game is safe to open in order to run the Windows executable file. 
+To incorporate continuous integration into our Godot workflow, our team decided to do some research into GitHub Actions to see if there were any pre-existing frameworks out there that we could use for our project. Soon after we began our search, we stumbled upon a number of workflows related to Godot in the Action's Marketplace. We decided on "Godot Export" version 5.2.0, which provided a way for us to simply set up an export_preset.cfg file from the Godot editor for our target OS, Windows to be released. The GitHub workflow is set up to run whenever the contents of the directory, "Latest_Build" is pushed. After this, we would simply need to place the contents of the latest build of our project on GitHub before running the workflow Action automatically, to update the release which returns in the form of a windows.exe file. This file can then be easily downloaded and ran from other PCs as a runnable video game, though at the moment potential players will need to tell Windows that the game is safe to open in order to run the Windows executable file. 
 
-The implementation of our auto-release system began with a video tutorial by a YouTuber called, FinePointCGI. After reviewing this video, we decided to locate his repository to view the yml workflow and preset configuration files he used in order to analyze them and curate them to our own project and engine version. **NOTE:** Due to our team's OS-related limitations, the Linux version of the game's release has yet to be tested.
+The implementation of our auto-release system began with a video tutorial by a YouTuber called, FinePointCGI. After reviewing this video, we decided to locate his repository to view the yml workflow and preset configuration files he used in order to analyze them and curate them to our own project and engine version.
 
 Release CI Video Link: https://youtu.be/bIXBosDO6f8
 
@@ -315,7 +315,9 @@ Release CI REPO Link: https://github.com/finepointcgi/Creating-a-Celeste-Like-Ch
 
 **Automated Testing System:**
 
-For our automated testing plan, we decided to use a similar approach to our continuous integration implementation by using GitHub Actions to run through a number of unit tests upon Latest_Build commits. After some research, it seemed as though everyone on the internet recommended using the Godot testing tool, known as GUT (Godot Unit Tests). This tool is not pre-built into Godot, instead, it is an extension that can be found in the Godot engine's "Asset Library." We originally planned on implementing a GitHub Actions workflow from the Marketplace called, "Godot GUT CI." 
+For our automated testing plan, we decided to use a similar approach to our continuous integration implementation by using GitHub Actions to run through a number of unit tests upon commits to the Latest_Build directory. After some research, it seemed as though everyone on the internet recommended using the Godot testing tool, known as GUT (Godot Unit Tests). This tool is not pre-built into Godot, instead, it is an extension that can be found in the Godot engine's "Asset Library." We originally planned on implementing a GitHub Actions workflow from the Marketplace called, "Godot GUT CI." However, we ran into a number of issues with implimenting this testing framework into GitHub. While the GUT extention works great for both the local Godot editor and VSCode, the GitHub related limitations made ultamately made our team look elsewhere for our automated testing framework.
+
+Below are the references used during the testing of GUT as a potential framework:
 
 GitHub Marketplace GUT Link: https://github.com/marketplace/actions/godot-gut-ci 
 
@@ -326,13 +328,15 @@ Godot engine/editor GUT Asset Wiki Link: https://bitwes.github.io/GutWiki/Godot4
 
 VSCode Godot-Extension for GUT REPO Link: https://github.com/bitwes/gut-extension.git (**NOTE:** requires Godot-Tools extension to work)
 
-The structure of our unit tests would follow the format shown in the provided wiki linked above. The implementation idea would be for any of our team members to, using the GUT test creation guide provided, simply add future unit tests to the test/unit/test_unit.gd script file in the Latest_Build directory. (**Note:** As we are still testing our GUT integration setup, we are currently using another copy of our latest build in a separate directory called, test_build. This way, we can add, remove, or alter dependency files without risk to our working automated release system.)
+Eventually, our team came accross another unit testing extention for Godot that many internat resources did not mentian called, gdUnit, specifically gdUnit4 for Godot version 4.0 and above. This framwork accomplished similar function to the GUT framework, however, this extention showcased a Continuous Integration YMAL file in its documentation that allowed us to quickly set up our own version of the workflow to sucessessfully run our unit tests through the same Latest_Build push trigger that our automated release system uses.
 
-With this workflow, we expected to easily be able to execute a file containing a number of unit tests covering several aspects of our code's position checking and numerical updates. This way we would know if any future commit disrupts our system or not. In practice, however, we ran into a number of issues with our attempts at implementing this automated testing framework. Despite the GUT addons working perfectly in the Godot editor, using a guide provided by the repository to run the tests in VSCode, so far, has not gone smoothly as issues with access permissions and lost files whose file paths seem to be clearly defined run rampant in our implementation attempts. Attempting the same in GitHub using the yml file guide provided by GUT also ended in failure for similar reasons. 
+gdUnit4 GitHub REPO Link: https://github.com/MikeSchulze/gdUnit4.git
 
-While our team can still make do with running our unit tests on our local Godot editors, our goal is to have an automated system that would work alongside our automated release system to help guarantee a functional release with the actions both triggering after every commit to the Latest_Build directory. 
+gdUnit4 Documentation Link: https://mikeschulze.github.io/gdUnit4/
+- Advanced Testing Guide Link: https://mikeschulze.github.io/gdUnit4/advanced_testing/index/
+- Continuous Integration YMAL File Example Link: https://mikeschulze.github.io/gdUnit4/faq/ci/
 
-**NOTE:** Since we are having issues with our GUT implementation, one might ask why we do not attempt to use some other services other than GitHub Actions. While we are not opposed to trying an alternative method, as was previously stated, most of the resources on the internet utilize some implementation of GUT in their Godot testing framework. Whether it be GUT with GitHub Actions, GUT with GitLab, or GUT with some other service, these resources very frequently go back to GUT whenever Godot unit testing is involved. Suffice it to say, that GUT will likely have to be involved in our automated testing system in one way or another. That said, our team plans to continue looking for ways to either make GUT work for us or for some alternative if GUT continues to give us issues.
+
 
 Some of the unit tests we plan to incorperate include tests related to:
 - Score updates
