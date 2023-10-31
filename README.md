@@ -336,6 +336,16 @@ gdUnit4 Documentation Link: https://mikeschulze.github.io/gdUnit4/
 - Advanced Testing Guide Link: https://mikeschulze.github.io/gdUnit4/advanced_testing/index/
 - Continuous Integration YMAL File Example Link: https://mikeschulze.github.io/gdUnit4/faq/ci/
 
+When using gdUnit4, while similar to GUT, is still quite different when it comes to its testing system. In the editor with the gdUnit4 plugin enabled, when right-clicking on a function, the ability to create a test is shown at the bottom of the list of options. Once chosen, a file is automatically created in the test directory of the project that is associated with the script that the chocen function belongs to as shown below:
+
+add image: chose function
+
+add image: chose create test
+
+add image: fresh test file
+
+add image: define test
+
 
 
 Some of the unit tests we plan to incorperate include tests related to:
