@@ -305,9 +305,9 @@ When deciding what CI service to use, we first decided to research how some othe
 
 **Automated Release System:**
 
-To incorporate continuous integration into our Godot workflow, our team decided to do some research into GitHub Actions to see if there were any pre-existing frameworks out there that we could use for our project. Soon after we began our search, we stumbled upon a number of workflows related to Godot in the Action's Marketplace. We decided on "Godot Export" version 5.2.0, which provided a way for us to simply set up an export_preset.cfg file from the Godot editor for our target OS, Windows to be released. The GitHub workflow is set up to run whenever the CI testing workflow completes successfully with all tests passed. This way, every updated release of our game is a version that passes all unit tests which will help ensure that our game works properly with minimal bugs. After this, we would simply need to place the contents of the latest build of our project on GitHub before running the workflow Action automatically, to update the release which returns in the form of a windows.exe file. This file can then be easily downloaded and run from other PCs as a runnable video game, though at the moment potential players will need to tell Windows that the game is safe to open in order to run the Windows executable file. 
+To incorporate continuous integration into our Godot workflow, our team decided to do some research into GitHub Actions to see if there were any pre-existing frameworks out there that we could use for our project. Soon after we began our search, we stumbled upon a number of workflows related to Godot in the Action's Marketplace. We decided on "Godot Export" version 5.2.0, which provided a way for us to simply set up an export_presets.cfg file from the Godot editor for our target OS, Windows to be released. The GitHub workflow is set up to run whenever the CI testing workflow completes successfully with all tests passed. This way, every updated release of our game is a version that passes all unit tests which will help ensure that our game works properly with minimal bugs. After this, we would simply need to place the contents of the latest build of our project on GitHub before running the workflow Action automatically, to update the release which returns in the form of a windows.exe file. This file can then be easily downloaded and run from other PCs as a runnable video game, though at the moment potential players will need to tell Windows that the game is safe to open in order to run the Windows executable file. 
 
-The implementation of our auto-release system began with a video tutorial by a YouTuber called, FinePointCGI. After reviewing this video, we decided to locate his repository to view the yml workflow and preset configuration files he used in order to analyze them and curate them to our own project and engine version.
+The implementation of our auto-release system began with a video tutorial by a YouTuber called, FinePointCGI. After reviewing this video, we decided to locate his repository to view the YML workflow and preset configuration files he used in order to analyze them and curate them to our own project and engine version.
 
 Release CI Video Link: https://youtu.be/bIXBosDO6f8
 
@@ -343,7 +343,7 @@ Here a function called 'check_for_alt_tile' in the script 'Tilemap.gd' is right-
 
 ![choose_function](images/testing_1.png)
 
-Once selected, you will be taken to a testing script which includes the name of the original script the function was located in followed by the suffix 'Test.gd' as shown below. Since GDScript files are typically placed in a directory called 'Scripts', the extension automatically creates a folder called 'Test' with a subdirectory called 'Scripts'. Any tests created for functions belonging to the script 'Tilemap' will now automatically be placed in 'test/Scripts/TilemapTest.gd'. 
+Once selected, you will be taken to a testing script which includes the name of the original script the function was located in followed by the suffix 'Test.gd' as shown below. Since GDScript files are typically placed in a directory called 'Scripts', the extension automatically creates a folder called 'test' with a subdirectory called 'Scripts'. Any tests created for functions belonging to the script 'Tilemap' will now automatically be placed in 'test/Scripts/TilemapTest.gd'. 
 
 ![open_test_file](images/testing_3.png)
 
@@ -359,7 +359,7 @@ For **manual** creation of new tests, if a test is created for a function in 'Ti
 
 **const __source = *Relative path from 'test/' (Example: 'res://Scripts/Tilemap.gd')***
 
-**Followed by all function tests relavant to that script.**
+**Followed by all function tests relevant to that script.**
 
 Visual Example:
 
@@ -373,7 +373,7 @@ The following shows the completed test function for 'check_for_alt_tile' which c
 
 Notice how when creating a test, you need to use the '__source' constant to load a new instance of the original script and assign it to a variable in order to call functions from that script. From there, using the gdUnit4 asserts and advanced testing guides linked above, anyone from our team should be able to create unit tests either in the editor using the extension or manually using the specified format to ensure that our ever-changing scripts will continue to work as intended.
 
-Some of the unit tests we plan to incorperate include tests related to:
+Some of the unit tests we plan to incorporate include tests related to:
 - Score updates
 - Currency updates
 - Changes in coordinate positions of players/objects
