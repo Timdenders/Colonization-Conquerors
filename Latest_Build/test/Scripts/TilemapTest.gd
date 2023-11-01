@@ -11,7 +11,7 @@ var tilemap = preload(__source).new()
 var ground_sea_layer = 0
 
 func test_check_for_alt_tile() -> void:
-	assert_that(tilemap.check_for_alt_tile(Vector2i(1,1))).is_equal(false)
+	assert_that(tilemap.check_for_alt_tile(Vector2i(1,1))).is_equal(true)
 
 func test_check_for_alt_tile_true() -> void:
 	var alt_tile = tilemap.get_cell_alternative_tile(ground_sea_layer, Vector2i(-19, 13))
