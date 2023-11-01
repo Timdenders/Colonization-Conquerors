@@ -305,7 +305,7 @@ When deciding what CI service to use, we first decided to research how some othe
 
 **Automated Release System:**
 
-To incorporate continuous integration into our Godot workflow, our team decided to do some research into GitHub Actions to see if there were any pre-existing frameworks out there that we could use for our project. Soon after we began our search, we stumbled upon a number of workflows related to Godot in the Action's Marketplace. We decided on "Godot Export" version 5.2.0, which provided a way for us to simply set up an export_preset.cfg file from the Godot editor for our target OS, Windows to be released. The GitHub workflow is set up to run whenever the contents of the directory, "Latest_Build" is pushed. After this, we would simply need to place the contents of the latest build of our project on GitHub before running the workflow Action automatically, to update the release which returns in the form of a windows.exe file. This file can then be easily downloaded and ran from other PCs as a runnable video game, though at the moment potential players will need to tell Windows that the game is safe to open in order to run the Windows executable file. 
+To incorporate continuous integration into our Godot workflow, our team decided to do some research into GitHub Actions to see if there were any pre-existing frameworks out there that we could use for our project. Soon after we began our search, we stumbled upon a number of workflows related to Godot in the Action's Marketplace. We decided on "Godot Export" version 5.2.0, which provided a way for us to simply set up an export_preset.cfg file from the Godot editor for our target OS, Windows to be released. The GitHub workflow is set up to run whenever the contents of the directory, "Latest_Build" is pushed. After this, we would simply need to place the contents of the latest build of our project on GitHub before running the workflow Action automatically, to update the release which returns in the form of a windows.exe file. This file can then be easily downloaded and run from other PCs as a runnable video game, though at the moment potential players will need to tell Windows that the game is safe to open in order to run the Windows executable file. 
 
 The implementation of our auto-release system began with a video tutorial by a YouTuber called, FinePointCGI. After reviewing this video, we decided to locate his repository to view the yml workflow and preset configuration files he used in order to analyze them and curate them to our own project and engine version.
 
@@ -315,7 +315,7 @@ Release CI REPO Link: https://github.com/finepointcgi/Creating-a-Celeste-Like-Ch
 
 **Automated Testing System:**
 
-For our automated testing plan, we decided to use a similar approach to our continuous integration implementation by using GitHub Actions to run through a number of unit tests upon commits to the Latest_Build directory. After some research, it seemed as though everyone on the internet recommended using the Godot testing tool, known as GUT (Godot Unit Tests). This tool is not pre-built into Godot, instead, it is an extension that can be found in the Godot engine's "Asset Library." We originally planned on implementing a GitHub Actions workflow from the Marketplace called, "Godot GUT CI." However, we ran into a number of issues with implimenting this testing framework into GitHub. While the GUT extention works great for both the local Godot editor and VSCode, the GitHub related limitations made ultamately made our team look elsewhere for our automated testing framework.
+For our automated testing plan, we decided to use a similar approach to our continuous integration implementation by using GitHub Actions to run through a number of unit tests upon commits to the Latest_Build directory. After some research, it seemed as though everyone on the internet recommended using the Godot testing tool, known as GUT (Godot Unit Tests). This tool is not pre-built into Godot, instead, it is an extension that can be found in the Godot engine's "Asset Library." We originally planned on implementing a GitHub Actions workflow from the Marketplace called, "Godot GUT CI." However, we ran into several issues with implementing this testing framework into GitHub. While the GUT extension works great for both the local Godot editor and VSCode, the GitHub-related limitations ultimately made our team look elsewhere for our automated testing framework.
 
 Below are the references used during the testing of GUT as a potential framework:
 
@@ -328,25 +328,50 @@ Godot engine/editor GUT Asset Wiki Link: https://bitwes.github.io/GutWiki/Godot4
 
 VSCode Godot-Extension for GUT REPO Link: https://github.com/bitwes/gut-extension.git (**NOTE:** requires Godot-Tools extension to work)
 
-Eventually, our team came accross another unit testing extention for Godot that many internat resources did not mentian called, gdUnit, specifically gdUnit4 for Godot version 4.0 and above. This framwork accomplished similar function to the GUT framework, however, this extention showcased a Continuous Integration YMAL file in its documentation that allowed us to quickly set up our own version of the workflow to sucessessfully run our unit tests through the same Latest_Build push trigger that our automated release system uses.
+Eventually, our team came across another unit testing extension for Godot that many internet resources did not mention called, gdUnit, specifically gdUnit4 for Godot version 4.0 and above. This framework accomplished a similar function to the GUT framework, however, this extension showcased a Continuous Integration YMAL file in its documentation that allowed us to quickly set up our own version of the workflow to successfully run our unit tests through the same Latest_Build push trigger that our automated release system uses.
 
 gdUnit4 GitHub REPO Link: https://github.com/MikeSchulze/gdUnit4.git
 
 gdUnit4 Documentation Link: https://mikeschulze.github.io/gdUnit4/
+- Asserts Guide Link: https://mikeschulze.github.io/gdUnit4/asserts/index/
 - Advanced Testing Guide Link: https://mikeschulze.github.io/gdUnit4/advanced_testing/index/
 - Continuous Integration YMAL File Example Link: https://mikeschulze.github.io/gdUnit4/faq/ci/
 
-When using gdUnit4, while similar to GUT, is still quite different when it comes to its testing system. In the editor with the gdUnit4 plugin enabled, when right-clicking on a function, the ability to create a test is shown at the bottom of the list of options. Once chosen, a file is automatically created in the test directory of the project that is associated with the script that the chocen function belongs to as shown below:
+When using gdUnit4, while similar to GUT, is still quite different when it comes to its testing system. In the editor with the gdUnit4 plugin enabled, when right-clicking on a function, the ability to create a test is shown at the bottom of the list of options. Once chosen, a file is automatically created in the test directory of the project that is associated with the script that the chosen function belongs to as shown below:
 
-add image: chose function
+Here a function called 'check_for_alt_tile' in the script 'Tilemap.gd' is right-clicked and the 'Create Test' option is chosen:
 
-add image: chose create test
+![choose_function](images/testing_1.png)
 
-add image: fresh test file
+Once selected, you will be taken to a testing script which includes the name of the original script the function was located in followed by the suffix 'Test.gd' as shown below. Since GDScript files are typically placed in a directory called 'Scripts', the extension automatically creates a folder called 'Test' with a subdirectory called 'Scripts'. Any tests created for functions belonging to the script 'Tilemap' will now automatically be placed in 'test/Scripts/TilemapTest.gd'. 
 
-add image: define test
+![open_test_file](images/testing_3.png)
 
+For **manual** creation of new tests, if a test is created for a function in 'Tilemap', the tests should be written in 'test/Scripts/TilemapTest.gd'. Otherwise, if the test is created for a function belonging to another script, it should be placed in 'test/Scripts/script_nameTest.gd'. The contents of 'script_nameTest.gd' should follow the format shown below where:
 
+**class_name = *script_nameTest***
+
+**extends GdUnitTestSuite**
+
+**@warning_ignore('unused_parameter')**
+
+**@warning_ignore('return_value_discarded')**
+
+**const __source = *Relative path from 'test/' (Example: 'res://Scripts/Tilemap.gd')***
+
+**Followed by all function tests relavant to that script.**
+
+Visual Example:
+
+![created_test](images/testing_2.png)
+
+In the image above, it can be seen that when a test is automatically generated in the Godot editor, the test function is followed by a default 'assert_not_yet_implemented()' function that fails the test.
+
+The following shows the completed test function for 'check_for_alt_tile' which checks if the given coordinate is out of bounds of the playable map region. The function tests if coordinate (1, 1) is out of bounds or not, and expects the function to return false indicating that (1, 1) is not out of bounds:
+
+![define_test](images/testing_4.png)
+
+Notice how when creating a test, you need to use the __source constant to load a new instance of the original script and assign it to a variable in order to call functions from that script. From there, using the gdUnit4 asserts and advanced testing guides linked above, anyone from our team should be able to create unit tests either in the editor using the extension or manually using the specified format to ensure that our ever-changing scripts will continue to work as intended.
 
 Some of the unit tests we plan to incorperate include tests related to:
 - Score updates
