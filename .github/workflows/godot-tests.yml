@@ -51,6 +51,7 @@ jobs:
           chmod u+x $GODOT_BIN
           echo "GODOT_HOME=$GODOT_HOME" >> "$GITHUB_ENV"
           echo "GODOT_BIN=$GODOT_BIN" >> "$GITHUB_ENV"
+        working-directory: ./Latest_Build
 
       # We need to update the project before running tests, Godot has actually issues with loading the plugin
       - name: "Update Project"
@@ -92,6 +93,7 @@ jobs:
             reports/**
             /var/lib/systemd/coredump/**
             /var/log/syslog
+          working-directory: ./Latest_Build
 
   finalize:
     if: ${{ !cancelled() }}
@@ -105,3 +107,4 @@ jobs:
               contains(needs.*.result, 'failure')
             || contains(needs.*.result, 'cancelled')
           }}
+        working-directory: ./Latest_Build
