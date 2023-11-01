@@ -371,7 +371,7 @@ The following shows the completed test function for 'check_for_alt_tile' which c
 
 ![define_test](images/testing_4.png)
 
-Notice how when creating a test, you need to use the __source constant to load a new instance of the original script and assign it to a variable in order to call functions from that script. From there, using the gdUnit4 asserts and advanced testing guides linked above, anyone from our team should be able to create unit tests either in the editor using the extension or manually using the specified format to ensure that our ever-changing scripts will continue to work as intended.
+Notice how when creating a test, you need to use the '__source' constant to load a new instance of the original script and assign it to a variable in order to call functions from that script. From there, using the gdUnit4 asserts and advanced testing guides linked above, anyone from our team should be able to create unit tests either in the editor using the extension or manually using the specified format to ensure that our ever-changing scripts will continue to work as intended.
 
 Some of the unit tests we plan to incorperate include tests related to:
 - Score updates
