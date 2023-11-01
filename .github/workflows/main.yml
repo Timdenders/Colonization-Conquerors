@@ -1,14 +1,10 @@
 name: ci-release
 
 on:
-  push:
-    branches: ['main']
-    paths: 
-      - 'Latest_Build/**'
-  pull_request:
-    branches: ['main']
-    paths: 
-      - 'Latest_Build/**'
+  workflow_run:
+    workflows: ["ci-testing"]
+    types:
+      - completed
     
   workflow_dispatch:
 
@@ -17,6 +13,7 @@ jobs:
   export_game:
     # Always use ubuntu-latest for this action
     runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     # Add permission for release creation. Can be made narrower according to your needs
     permissions: write-all
     # Job name, can be anything
