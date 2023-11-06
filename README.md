@@ -211,10 +211,10 @@ ___
 | 10/8/23 - 10/14/23 | ~~Completion of prototype, begin development of beta~~ |
 | 10/15/23 - 10/21/23 | ~~Completion of prototype, begin development of beta~~ |
 | 10/22/23 - 10/28/23 | ~~Finalization of mechanics~~ |
-| 10/29/23 - 11/4/23 | Completion of prototype, begin development of beta <br> Finalization of GUI, in-game sprites, and mechanics |
-| 11/5/23 - 11/11/23 | Finalization of sound design <br> Work on extra features (Leaderboards/Discord integration) |
-| 11/12/23 - 11/18/23 | Continue working on extra features |
-| 11/19/23 - 11/25/23 | Finalization of documentation |
+| 10/29/23 - 11/4/23 | ~~Completion of prototype, begin development of beta <br> Finalization of GUI, in-game sprites, and mechanics~~ |
+| 11/5/23 - 11/13/23 | Completion of prototype, begin development of beta <br> Finalization of everything <br> Work on extra features (Leaderboards/Discord integration) |
+| 11/14/23 - 11/18/23 | Continue working on extra features |
+| 11/19/23 - 11/25/23 | Continue working on extra features <br> Finalization of documentation |
 | 11/26/23 - 12/2/23 | Finalization of Colonization Conquerors |
 ___
 ### **Major Milestones**
