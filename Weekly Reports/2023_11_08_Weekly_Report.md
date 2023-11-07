@@ -8,7 +8,7 @@ ___
 - Design, delegate, and begin implementation of random weather events.
 
 #### **Progress:**
-- 
+- Congregated for a 9-minute meeting to discuss the project's progression and future plans.
 
 #### **Plans:**
 - 
