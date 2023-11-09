@@ -48,7 +48,7 @@ ___
 - **Goals:**
   - Completion of School and Hospital-related mechanics.
 - **Progress:**
-  - Put forward logic of School and Hospital-related mechanics.
+  - Presented the logic for the mechanics related to Schools and Hospitals.
 - **Plans:**
   - Test the game before the Alpha release.
 
