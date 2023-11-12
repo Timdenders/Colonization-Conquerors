@@ -15,7 +15,7 @@ ___
   - Random disasters and events can occur in the game, adding an element of unpredictability. These events, such as rain storms or hurricanes, can have both positive and negative effects on a player's construction.
 
 ___
-###Use Case:
+### Use Case:
 Colonization Conquerors is a game for players who want to take charge of their own island. Manage your resources to construct the wealthiest island city you can!
 ___
 
