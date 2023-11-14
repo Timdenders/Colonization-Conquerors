@@ -78,6 +78,7 @@ Interaction Mode:
 - Accumulate points, not money, to win. Each player starts with 100 gold bars.
 - Players can purchase items using gold bars, and rebels are placed randomly by the computer and boats automatically appear in your island harbor when purchased.
 - Check to make sure you have enough gold bars to buy the item you want (Each item cost is listed below).
+  - You are free to buy items at any point in a round, provided you have the necessary funds. At the round's conclusion, there is a momentary freeze in all actions. The scoreboard updates to display your score for the last round (points gained) and your cumulative score. Upon resumption, the game continues seamlessly, incorporating any earnings from the preceding round.
 
 **Budget Expenditures:**
 - Fort(50) Protection - Guards surrounding land area against rebels. Guards nearby fishing boats against pirates and opponent's PT boats.
