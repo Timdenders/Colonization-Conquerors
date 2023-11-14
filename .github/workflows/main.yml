@@ -32,7 +32,7 @@ jobs:
         # Defining all the required inputs
         godot_executable_download_url: https://downloads.tuxfamily.org/godotengine/4.1.1/Godot_v4.1.1-stable_linux.x86_64.zip
         godot_export_templates_download_url: https://downloads.tuxfamily.org/godotengine/4.1.1/Godot_v4.1.1-stable_export_templates.tpz
-        relative_project_path: ./Latest_Build/
+        relative_project_path: ./Latest_build/
         archive_output: true
 
       # This release action has worked well for me. However, you can most likely use any release action of your choosing.
