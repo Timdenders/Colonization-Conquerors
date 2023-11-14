@@ -284,13 +284,23 @@ func randomEvent(event):
 		randpath.append(start_pos)
 		while alive:
 			var new_pos = getHexNeighbors(randpath[-1], event)
-			if event == "pirate" and get_cell_atlas_coords(object_layer, new_pos) == Vector2i(0, 6):
-				pass
-			else:
-				randpath.append(new_pos)
-			var current_pos = randpath[-2]
+			if event == "pirate":
+				if get_cell_atlas_coords(object_layer, new_pos) == Vector2i(0, 6):
+					set_cell(sea_two_layer, new_pos, -1)
+					print("PATROL AHEAD!!!")
+					if new_pos in randpath:
+						randpath.erase(new_pos)
+				else:
+					randpath.append(new_pos)
 			var next_pos = randpath[-1]
+			var current_pos = next_pos
+			if randpath.size() < 2:
+				current_pos = next_pos
+			else:
+				current_pos = randpath[-2]
 			await get_tree().create_timer(1.0).timeout
+			if randpath.size() > 4:
+				randpath.remove_at(0)
 			
 			if get_cell_atlas_coords(sea_two_layer, current_pos) == Vector2i(0, 8):
 				if randf() < 0.67:
