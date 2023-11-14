@@ -17,11 +17,38 @@ ___
 ___
 ### Use Case:
 Colonization Conquerors is a game for players who want to take charge of their own island. Manage your resources to construct the wealthiest island city you can!
-___
 
+___
 ### How to Run the Game:
 From GitHub, navigate this main page of the repository to the **Releases** link. From there you will find under **Assets** a folder called, **WindowsDesktop.zip** which can be downloaded to your machine. You can then extract the files from the zip folder which will contain an application called **Colonization_Conquerors_Game.exe**. Then, simply run the executable file to begin the game.
 
+___
+### How to Run the Project and Test Sweep:
+If you wish to run the Godot project from the Godot editor, you can download Godot version 4.1.1 from the following: 
+
+https://godotengine.org/download/archive/4.1.1-stable/ 
+
+From this page, you can choose which operating system you wish to download. Since our team developed the software using the Windows version, it is recommended to use the Windows version of Godot as well. You will now have a zipped folder called **Godot_v4.1.1-stable_win64.exe** which you can extract. This folder contains an application called **Godot_v4.1.1-stable_win64** which is the self-contained Godot engine, no installation is required!
+
+After opening the editor, you will see a project manager open. 
+
+![Open_editor](images/run_test_1.png)
+
+You can then drag and drop the project folder into the empty space:
+
+![Add_project](images/run_test_2.png)
+
+You will then be met with the open project. Take note of the GdUnit tab, gdUnitConsole, and test folders marked below:
+
+![View_project](images/run_test_3.png)
+
+After selecting the two gdUnit tabs, if you navigate the test directory into Scripts and select a testing script, you can then right-click into the editor and select **Run Tests** as shown below:
+
+![Select_test_spcript](images/run_test_4.png)
+
+As you can see, the tests located in that testing script were run and successfully completed:
+
+![Run_test](images/run_test_5.png)
 ___
 ### How to Play:
 **Controls:**
