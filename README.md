@@ -118,6 +118,12 @@ Interaction Mode:
 - Use the \ key to switch between Interaction modes. By default, the Interaction mode is set to Player One.
 - Left click using a mouse to move the player cursor to a cell. To place objects, press a button on the scoreboard and then confirm selection.
 
+Pause Game:
+- To pause the game, press the ESC key.
+  - Resume button - Resume the game.
+  - Retry button - Go back to Setup Menu.
+  - Exit button - Exit the application.
+
 **Game Objective:**
 1. **Single Player:** Aim to achieve the highest possible score in the selected number of rounds (your term of office). Points represent the overall well-being of the people, earned and spent to enhance living conditions on your chosen island.
 2. **Two Players:** Outscore your opponent by improving living conditions on your island, either through cooperation or by inciting rebellion and causing a loss of revenue on your opponent's island.
