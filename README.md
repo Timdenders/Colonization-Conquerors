@@ -16,11 +16,15 @@ ___
 
 ___
 ### Use Case:
-Colonization Conquerors is a game for players who want to take charge of their own island. Manage your resources to construct the wealthiest island city you can!
+Colonization Conquerors is a game for people who want to experience a strategy focused, island city building adventure where you compete against your opponent to see who can amass the most wealth and power!
+
+
 
 ___
 ### How to Run the Game:
-From GitHub, navigate this main page of the repository to the **Releases** link. From there you will find under **Assets** a folder called, **WindowsDesktop.zip** which can be downloaded to your machine. You can then extract the files from the zip folder which will contain an application called **Colonization_Conquerors_Game.exe**. Then, simply run the executable file to begin the game. **NOTE** you may need to ask Windows to allow the game to run.
+From GitHub, navigate this main page of the repository to the **Releases** link. From there you will find under **Assets** a folder called, **WindowsDesktop.zip** which can be downloaded to your machine. You can then extract the files from the zip folder which will contain an application called **Colonization_Conquerors_Game.exe**. Then, simply run the executable file to begin the game. 
+
+**NOTE** you may need to ask Windows to allow the game to run.
 
 ___
 ### How to Run the Project and Test Sweep:
