@@ -315,7 +315,7 @@ Release CI REPO Link: https://github.com/finepointcgi/Creating-a-Celeste-Like-Ch
 
 **Automated Testing System:**
 
-For our automated testing plan, we decided to use a similar approach to our continuous integration implementation by using GitHub Actions to run through a number of unit tests upon any commit to the Latest_Build directory. After some research, it seemed as though everyone on the internet recommended using the Godot testing tool, known as GUT (Godot Unit Tests). This tool is not pre-built into Godot, instead, it is an extension that can be found in the Godot engine's "Asset Library." We originally planned on implementing a GitHub Actions workflow from the Marketplace called, "Godot GUT CI." However, we ran into several issues with implementing this testing framework into GitHub. While the GUT extension works great for both the local Godot editor and VSCode, the GitHub-related limitations ultimately made our team look elsewhere for our automated testing framework.
+For our automated testing plan, we decided to use a similar approach to our continuous integration implementation by using GitHub Actions to run through a number of unit tests upon any commit to the Latest_build directory. After some research, it seemed as though everyone on the internet recommended using the Godot testing tool, known as GUT (Godot Unit Tests). This tool is not pre-built into Godot, instead, it is an extension that can be found in the Godot engine's "Asset Library." We originally planned on implementing a GitHub Actions workflow from the Marketplace called, "Godot GUT CI." However, we ran into several issues with implementing this testing framework into GitHub. While the GUT extension works great for both the local Godot editor and VSCode, the GitHub-related limitations ultimately made our team look elsewhere for our automated testing framework.
 
 Below are the references used during the testing of GUT as a potential framework:
 
@@ -328,7 +328,7 @@ Godot engine/editor GUT Asset Wiki Link: https://bitwes.github.io/GutWiki/Godot4
 
 VSCode Godot-Extension for GUT REPO Link: https://github.com/bitwes/gut-extension.git (**NOTE:** requires Godot-Tools extension to work)
 
-Eventually, our team came across another unit testing extension for Godot that many internet resources did not mention called, gdUnit, specifically gdUnit4 for Godot version 4.0 and above. This framework accomplished a similar function to the GUT framework, however, this extension showcased a Continuous Integration YMAL file in its documentation that allowed us to quickly set up our version of the workflow to successfully trigger and run our unit tests whenever the Latest_Build directory is committed to.
+Eventually, our team came across another unit testing extension for Godot that many internet resources did not mention called, gdUnit, specifically gdUnit4 for Godot version 4.0 and above. This framework accomplished a similar function to the GUT framework, however, this extension showcased a Continuous Integration YMAL file in its documentation that allowed us to quickly set up our version of the workflow to successfully trigger and run our unit tests whenever the Latest_build directory is committed to.
 
 gdUnit4 GitHub REPO Link: https://github.com/MikeSchulze/gdUnit4.git
 
