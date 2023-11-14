@@ -378,3 +378,10 @@ Some of the unit tests we plan to incorporate include tests related to:
 - Currency updates
 - Changes in coordinate positions of players/objects
 - Damaging of objects
+
+___
+### **Version Control**
+
+Version control for a project like ours typically includes well-documented commits without major replacements. It also entails a good testing sweep that is preferably automatically run upon changes to the source code, and a way for our software to be built and run. However, due to the nature of our development tool, Godot, our team has been largely unable to practice proper version control. 
+
+Our issues is due to the fact that the Godot development tool makes frequent use of node objects which are defined and connected between scripts and scenes in a coding layer that is normally unseen by our team's development level. This means that if any change to our code base involves the addition, subtraction, or alteration of one of these nodes, then instead of simply committing that isolated change, we would have to completely replace the project's contents in its entirety from the Latest_build directory to the new version of the project. OF course, the ideal would be to avoid any situation where any single commit contains most or all of our source code for the software, however, due to this fundamental aspect of Godot, so far we have been unable to avoid this undesirable behavior.
