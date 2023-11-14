@@ -1,5 +1,12 @@
 # Colonization Conquerors
 
+## Repository Contents:
+- Source Code = Located in **Latest_build**: The heart of our project lies here, where we've meticulously crafted the game's functionality and mechanics.
+- Living Document: This document provides an overview of the project, team information, major features, stretch goals, use cases, non-functional requirements, and more. It serves as your guide to Colonization Conquerors.
+- Weekly Reports: Our weekly reports detail our progress and accomplishments, helping you stay up to date with our development journey.
+- Projects: The Projects page outlines our scheduled tasks, assignments, and responsibilities for each team member, offering insight into our project's ongoing development.
+- README: This top-level REAdME file contains an introduction to our project including, who it is for, how to run, test, and build the software, as well as the rules of the game.
+
 ### Product Description:
 Colonization Conquerors is set to be developed as a turn-based strategy PC game inspired by the classic Utopia (1982). The game revolves around building and creating a civilization, resource management, and competitive gameplay to win matches. It aims to blend the nostalgia of Utopia's core gameplay with different visuals, and user experience enhancements.
 ___
