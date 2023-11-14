@@ -24,7 +24,7 @@ From GitHub, navigate this main page of the repository to the **Releases** link.
 
 ___
 ### How to Play:
-**Controls**
+**Controls:**
 
 Moving Cursors:
 - Use the S Z X C keys to move the Player One cursor and the L , . / keys to move the Player Two cursor.
