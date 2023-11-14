@@ -1,9 +1,0 @@
-res://Themes/ob_button.tres
-res://Themes/po_confirmation_dialog.tres
-res://base_test/base_test.gd
-res://test/base_test_test/base_test_test.gd
-res://Scripts/Setup_Menu.gd
-res://Scripts/Tilemap.gd
-res://test/Scripts/TilemapTest.gd
-res://Interface/Setup_Menu.tscn
-res://Interface/World.tscn
