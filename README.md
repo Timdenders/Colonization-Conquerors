@@ -18,7 +18,26 @@ ___
 ### Use Case:
 Colonization Conquerors is a game for people who want to experience a strategy focused, island city building adventure where you compete against your opponent to see who can amass the most wealth and power!
 
+#### Implimented Use Cases:
+| Use Case 1    | Player Building & Island Development |
+| -------- | ------- |
+| Actor | Player |
+| Trigger | The player desires to initiate construction and <br />development on an island within Colonization Conquerors. |
+| Preconditions | The player has started a new match. |
+| Postconditions <br />(Success Scenario) | The player successfully builds and develops his land in Colonization Conquerors. |
+| List of Steps <br />(Success Scenario) | a. The player constructs objects on the island. <br />b. The player manages resources and continues expanding the island. |
+| Extensions/Variations <br />of the Success Scenario | The player can choose different structures and <br />resource allocation strategies. |
+| Exceptions: Failure <br />Conditions & Scenarios | If the player’s resources are insufficient, the chosen <br />structures cannot be built. |
 
+| Use Case 2    | Competitive Gameplay & Interaction with Rival Player |
+| -------- | ------- |
+| Actor | Players |
+| Trigger | Player 1 and Player 2 want to engage in competitive <br />gameplay with each other. |
+| Preconditions | The players are in the same game. |
+| Postconditions <br />(Success Scenario) | Player 1 and Player 2 participate in competitive <br />gameplay. |
+| List of Steps <br />(Success Scenario) | a. Both players start a session with each other. <br />b. They allocate resources strategically and expand their island. <br />c. Each player decides to fund rebel activities on the other’s island. <br />d. Otherwise, a confrontation between their PT boats and fishing boats occurs. <br />e. Player 1 and Player 2 continue to compete and strategize. |
+| Extensions/Variations <br />of the Success Scenario | Player 1 and Player 2 can employ different tactics <br />during gameplay. |
+| Exceptions: Failure <br />Conditions & Scenarios | If the session ends too early, they cannot engage in <br />competitive gameplay. |
 
 ___
 ### How to Run the Game:
