@@ -24,3 +24,102 @@ From GitHub, navigate this main page of the repository to the **Releases** link.
 
 ___
 ### How to Play:
+**CONTROLS**
+
+MOVING CURSORS:
+- Use the S Z X C keys to move the Player One cursor and the L , . / keys to move the Player Two cursor.
+- NOTE: DO NOT use the cursor to deploy rebels on your opponent's island or to buy a boat. The computer randomly places rebels, and boats materialize in your island harbor automatically upon purchase.
+
+PLACING OBJECTS:<br>
+
+Player One
+- Fort: 1
+- Factory: 2
+- Acre of Crops: 3
+- School: 4
+- Hospital: 5
+- Housing Project: Q
+- Rebel Soldiers: W
+- PT Boat: E
+- Fishing Boat: R
+
+Player Two
+- Fort: 8
+- Factory: 9
+- Acre of Crops: 0
+- School: -
+- Hospital: =
+- Housing Project: I
+- Rebel Soldiers: O
+- PT Boat: P
+- Fishing Boat: [
+
+SHIP CONTROL:
+- Move cursor over the boat, then use the F key (Player One) or J key (Player Two) to control fishing boats or PT boats Press F or J to exit.
+
+INTERACTION MODE:
+- Use the \ key to switch between Interaction modes. By default, the Interaction mode is set to Player One.
+- Left click using a mouse to move the player cursor to a cell. To place objects, press a button on the scoreboard and then confirm selection.
+
+**GAME OBJECTIVE:**
+1. **SINGLE PLAYER:** Aim to achieve the highest possible score in the selected number of rounds (your term of office). Points represent the overall well-being of the people, earned and spent to enhance living conditions on your chosen island.
+2. **TWO PLAYERS:** Outscore your opponent by improving living conditions on your island, either through cooperation or by inciting rebellion and causing a loss of revenue on your opponent's island.
+   - In a 1-player game, control one island and ignore the other.
+
+**SETUP MENU:**
+1. Use number keys to select the NUMBER OF ROUNDS (1 to 50) and press ENTER.
+2. Use number keys to select the LENGTH OF EACH ROUND (30 to 120) and press ENTER.
+
+**GAMEPLAY:**
+- The scoreboard displays four numbers in each corner, representing gold bar count, population count, current score, and total score for both players.
+- Random events such as rain clouds, pirate ships, tropical storms, schools of fish, and hurricanes are controlled by the computer.
+
+**GOVERNING YOUR ISLAND KINGDOM:**
+- Accumulate points, not money, to win. Each player starts with 100 gold bars.
+- Players can purchase items using gold bars, and rebels are placed randomly by the computer and boats automatically appear in your island harbor when purchased.
+- Check to make sure you have enough gold bars to buy the item you want (Each item cost is listed below).
+
+**BUDGET EXPENDITURES:**
+- Fort(50) Protection - Guards surrounding land area against rebels. Guards nearby fishing boats against pirates and opponent's PT boats.
+- Factory(40) Income - Earns at least 4 gold bars per round. (More as the well-being of people increases.) Pollution increases the death rate.
+- Acre of Crops(3) Income/Points - Each acre feeds approx. 500 people. When rained upon, yields revenue (approx. 1 gold bar per acre). The average life of an acre of crops is 3 rounds, but this number varies.
+- School(35) Income/Points - Increases well-being of people and productivity of factories.
+- Hospital(75) Income/Points - Increases population and greatly increases factory productivity.
+- Housing Project(60) Points - Increases harmony on an island by housing 500 people.
+- Rebel Soldiers(30) Aggression - Cause opponent to lose points or income.
+- PT Boat(40) Protection/Aggression - Guards your fishing boat against pirates. Sinks opponent's fishing boat.
+- Fishing Boat(25) Income/Points - Automatically feeds 500 people and earns 1 gold bar/round. If moved over a school of fish, earns 1 gold bar for every second remaining over fish. Can be sunk by pirates, PT boats, or hurricanes.
+
+**SCORING AND POPULATION:**
+- Earn 10 gold bars per round automatically.
+- Maintain a balance of housing, food, schools, and hospitals based on population needs. Remember:
+  - 1 housing project per 500 people.
+  - 1 fishing boat OR 1 acre of crops per 500 people.
+  - Hospitals and schools are up to you.
+
+**WEATHER EFFECTS:**<br>
+
+While you cannot exert control over it, you can endeavor to foresee and prepare for it.
+  - Rain Storms - Help your crows grow. Try to plant where the rain most frequently falls.
+  - Tropical Storms - Bring a deluge. They may either help your crops or destroy them. On rare occasions, they may destroy a building or boat.
+  - Hurricanes - Usually lay waste to everything in their paths. Fishing boats will be sunk. Everything else over which the hurricane passes has a 2/3 chance of being leveled.
+
+**REBELS AND PEACEKEEPING:**
+- Rebels may appear due to dissatisfaction and can be countered by improving well-being.
+- A fort protects its surroundings.
+
+**PIRATES AND PT BOATS:**
+- A PT boat can sink an opponent's fishing boat by occupying the same space.
+- PT boats cannot sink pirate ships or other PT boats.
+- PT boats can stop pirate ships by moving in front of them. Use a PT boat to protect a fishing boat in the harbor.
+- PT boats can ONLY be sunk by hurricanes or tropical storms (rare).
+- PT boats cannot fish.
+- You cannot control BOTH PT boat and fishing boat at the same time.
+- Pirates can ONLY be sunk by hurricanes or tropical storms (rare).
+- Pirates can sink fishing boats by occupying the same space.
+
+**ADVICE:**
+- Prioritize buying a fishing boat early for reliable income.
+- Establish housing early, then consider building a factory.
+- Build hospitals strategically to balance productivity and population growth.
+- Exercise caution with crops due to their dependence on rain and the need for replanting.
