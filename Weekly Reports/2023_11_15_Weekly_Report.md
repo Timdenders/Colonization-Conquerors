@@ -54,7 +54,7 @@ ___
   - Look into controller support for ease of LAN multiplayer gameplay.
 - **Progress:**
   - Updated sprites for random weather, pirate, and fish events as well as fishing, and PT boats.
-    - Added extra sprites to allow animated movement.
+    - Added extra sprite frames to allow for animated movement.
   - Implemented random movement and tilemap coordinate collision events between the random sprites and player objects.
 - **Plans:**
   - Prepare the repository for other groups to easily navigate to the source code of the software as a zip file.
