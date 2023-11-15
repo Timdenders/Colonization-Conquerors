@@ -10,7 +10,7 @@
 ### Product Description:
 Colonization Conquerors is set to be developed as a turn-based strategy PC game inspired by the classic Utopia (1982). The game revolves around building and creating a civilization, resource management, and competitive gameplay to win matches. It aims to blend the nostalgia of Utopia's core gameplay with different visuals, and user experience enhancements.
 ___
-### **Major Features**
+### **Major Features:**
 
 - Island Development:
   - Players can create and advance their island through the construction of diverse structures, including crops, factories, and forts. Each of these structures serves distinct functions, such as sustaining the population, generating revenue, or fortifying against potential attacks.
@@ -25,7 +25,7 @@ ___
 ### Use Case:
 Colonization Conquerors is a game for people who want to experience a strategy-focused, island city-building adventure where you compete against your opponent to see who can amass the most wealth and power!
 
-#### Implemented Use Cases:
+**Implemented Use Cases**
 | Use Case 1    | Player Building & Island Development |
 | -------- | ------- |
 | Actor | Player |
@@ -50,7 +50,7 @@ ___
 ### How to Run the Game:
 From GitHub, navigate this main page of the repository to the **Releases** link. From there you will find under **Assets** a folder called, **WindowsDesktop.zip** which can be downloaded to your machine. You can then extract the files from the zip folder which will contain an application called **ColonizationConquerors.exe**. Then, run the executable file to begin the game. 
 
-**NOTE**: You may need to ask Windows to allow the game to run.
+**NOTE:** You may need to ask Windows to allow the game to run.
 
 ___
 ### How to Run the Project and Test Sweep:
@@ -81,35 +81,25 @@ As you can see, the tests located in that testing script were run and successful
 ![Run_test](images/run_test_5.png)
 ___
 ### How to Play:
-**Controls:**
+**Controls**
 
 Moving Cursors:
 - Use the S Z X C keys to move the Player One cursor and the L , . / keys to move the Player Two cursor.
-- NOTE: DO NOT use the cursor to deploy rebels on your opponent's island or to buy a boat. The computer randomly places rebels, and boats materialize in your island harbor automatically upon purchase.
+- **NOTE: DO NOT** use the cursor to deploy rebels on your opponent's island or to buy a boat. The computer randomly places rebels, and boats materialize in your island harbor automatically upon purchase.
 
 Placing Objects:<br>
 
-Player One
-- Fort: 1
-- Factory: 2
-- Acre of Crops: 3
-- School: 4
-- Hospital: 5
-- Housing Project: Q
-- Rebel Soldiers: W
-- PT Boat: E
-- Fishing Boat: R
-
-Player Two
-- Fort: 8
-- Factory: 9
-- Acre of Crops: 0
-- School: -
-- Hospital: =
-- Housing Project: I
-- Rebel Soldiers: O
-- PT Boat: P
-- Fishing Boat: [
+| Object | Player One (key) | Player Two (key) |
+| -------- | ------- | ------- |
+| <p align="center"><img src="images/fort.png" width="25"><br>Fort</p> | 1 | 8 |
+| <p align="center"><img src="images/factory.png" width="25"><br>Factory</p> | 2 | 9 |
+| <p align="center"><img src="images/crops.png" width="25"><br>Acre of Crops</p> | 3 | 0 |
+| <p align="center"><img src="images/school.png" width="25"><br>School</p> | 4 | - |
+| <p align="center"><img src="images/hospital.png" width="25"><br>Hospital</p> | 5 | = |
+| <p align="center"><img src="images/housing.png" width="25"><br>Housing Project</p> | Q | I |
+| <p align="center"><img src="images/rebel.png" width="25"><br>Rebel Soldiers</p> | W | O |
+| <p align="center"><img src="images/pt_boat.png" width="25"><br>PT Boat</p> | E | P |
+| <p align="center"><img src="images/fishing_boat.png" width="25"><br>Fishing Boat</p> | R | [ |
 
 Ship Control:
 - Move the cursor over the boat, then use the F key (Player One) or J key (Player Two) to control fishing boats or PT boats. Press F or J to exit.
@@ -124,26 +114,27 @@ Pause Game:
   - Retry button - Go back to the Setup Menu.
   - Exit button - Exit the application.
 
-**Game Objective:**
+**Game Objective**
 1. **Single Player:** Aim to achieve the highest possible score in the selected number of rounds (your term of office). Points represent the overall well-being of the people, earned and spent to enhance living conditions on your chosen island.
 2. **Two Players:** Outscore your opponent by improving living conditions on your island, either through cooperation or by inciting rebellion and causing a loss of revenue on your opponent's island.
    - In a 1-player game, control one island and ignore the other.
 
-**Setup Menu:**
+**Setup Menu**
 1. Use number keys to select the NUMBER OF ROUNDS (1 to 50) and press ENTER.
 2. Use number keys to select the LENGTH OF EACH ROUND (30 to 120) and press ENTER.
 
-**Gameplay:**
+**Gameplay**
 - The scoreboard displays four numbers in each corner, representing gold bar count, population count, current score, and total score for both players.
 - Random events such as rain clouds, pirate ships, tropical storms, schools of fish, and hurricanes are controlled by the computer.
+<p align="center"><img src="images/rain_storm.png" width="35"> <img src="images/pirate_ship.png" width="35"> <img src="images/tropical_storm.png" width="35"> <img src="images/school_of_fish.png" width="35"> <img src="images/hurricane.png" width="35"></p>
 
-**Governing your Island Kingdom:**
+**Governing your Island Kingdom**
 - Accumulate points, not money, to win. Each player starts with 100 gold bars.
 - Players can purchase items using gold bars, and rebels are placed randomly by the computer and boats automatically appear in your island harbor when purchased.
 - Check to make sure you have enough gold bars to buy the item you want (Each item cost is listed below).
   - You are free to buy items at any point in a round, provided you have the necessary funds. At the round's conclusion, there is a momentary freeze in all actions. The scoreboard updates to display your score for the last round (points gained) and your cumulative score. Upon resumption, the game continues seamlessly, incorporating any earnings from the preceding round.
 
-**Budget Expenditures:**
+**Budget Expenditures**
 - Fort(50) Protection - Guards surrounding land area against rebels. Guards nearby fishing boats against pirates and opponent's PT boats.
 - Factory(40) Income - Earns at least 4 gold bars per round. (More as the well-being of people increases.) Pollution increases the death rate.
 - Acre of Crops(3) Income/Points - Each acre feeds approx. 500 people. When rained upon, yields revenue (approx. 1 gold bar per acre). The average life of an acre of crops is 3 rounds, but this number varies.
@@ -154,25 +145,25 @@ Pause Game:
 - PT Boat(40) Protection/Aggression - Guards your fishing boat against pirates. Sinks opponent's fishing boat.
 - Fishing Boat(25) Income/Points - Automatically feeds 500 people and earns 1 gold bar/round. If moved over a school of fish, earns 1 gold bar for every second remaining over fish. Can be sunk by pirates, PT boats, or hurricanes.
 
-**Scoring and Population:**
+**Scoring and Population**
 - Earn 10 gold bars per round automatically.
 - Maintain a balance of housing, food, schools, and hospitals based on population needs. Remember:
   - 1 housing project per 500 people.
   - 1 fishing boat OR 1 acre of crops per 500 people.
   - Hospitals and schools are up to you.
 
-**Weather Effects:**<br>
+**Weather Effects**<br>
 
 While you cannot exert control over it, you can endeavor to foresee and prepare for it.
   - Rain Storms - Help your crows grow. Try to plant where the rain most frequently falls.
   - Tropical Storms - Bring a deluge. They may either help your crops or destroy them. On rare occasions, they may destroy a building or boat.
   - Hurricanes - Usually lay waste to everything in their paths. Fishing boats will be sunk. Everything else over which the hurricane passes has a 2/3 chance of being leveled.
 
-**Rebels and Peacekeeping:**
-- Rebels may appear due to dissatisfaction and can be countered by improving well-being.
-- A fort protects its surroundings.
+**Rebels and Peacekeeping**
+- Rebels will appear due to dissatisfaction and can be countered by improving well-being.
+- A fort prevents rebels from spawning around it.
 
-**Pirates and PT Boats:**
+**Pirates and PT Boats**
 - A PT boat can sink an opponent's fishing boat by occupying the same space.
 - PT boats cannot sink pirate ships or other PT boats.
 - PT boats can stop pirate ships by moving in front of them. Use a PT boat to protect a fishing boat in the harbor.
@@ -182,7 +173,7 @@ While you cannot exert control over it, you can endeavor to foresee and prepare 
 - Pirates can ONLY be sunk by hurricanes or tropical storms (rare).
 - Pirates can sink fishing boats by occupying the same space.
 
-**Advice:**
+**Advice**
 - Prioritize buying a fishing boat early for reliable income.
 - Establish housing early, then consider building a factory.
 - Build hospitals strategically to balance productivity and population growth.
