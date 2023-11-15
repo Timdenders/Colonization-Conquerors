@@ -11,10 +11,15 @@ ___
 
 #### **Progress:**
 - Congregated for a 16-minute meeting to discuss the project's progression and Alpha release.
-- 
+- Implemented random events.
+- Moved previous README to the Living_Document directory.
+- Updated front page README to reflect the Alpha release description.
+- Recorded Demo Video for the Alpha release of the Colonization-Conquerors videogame.
 
 #### **Plans:**
-- 
+- Initiate player testing to look for bugs.
+  - If any bugs are found, take steps towards fixing them in a timely manner.
+- Discuss future additions or improvements to the current state of the game.
 
 
 #
@@ -48,9 +53,12 @@ ___
   - Create sprites for weather events and reuse experience gained from developing the pirate pathing mechanic to the weather events.
   - Look into controller support for ease of LAN multiplayer gameplay.
 - **Progress:**
-  - 
+  - Updated sprites for random weather, pirate, and fish events as well as fishing, and PT boats.
+    - Added extra sprites to allow animated movement.
+  - Implemented random movement and tilemap coordinate collision events between the random sprites and player objects.
 - **Plans:**
-  - 
+  - Prepare the repository for other groups to easily navigate to the source code of the software as a zip file.
+  - Test the current release and look for bugs.
 
 #
 #### **Zachary Thomas:**
