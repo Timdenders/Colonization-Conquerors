@@ -1,7 +1,7 @@
 # Colonization Conquerors
 
 ## Repository Contents:
-- Source Code = Located in **Latest_build**: The heart of our project lies here, where we've meticulously crafted the game's functionality and mechanics.
+- Source Code - Located in **Latest_build**: The heart of our project lies here, where we've meticulously crafted the game's functionality and mechanics.
 - Living Document: This document provides an overview of the project, team information, major features, stretch goals, use cases, non-functional requirements, and more. It serves as your guide to Colonization Conquerors.
 - Weekly Reports: Our weekly reports detail our progress and accomplishments, helping you stay up to date with our development journey.
 - Projects: The Projects page outlines our scheduled tasks, assignments, and responsibilities for each team member, offering insight into our project's ongoing development.
