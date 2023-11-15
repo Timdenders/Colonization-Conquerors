@@ -14,7 +14,7 @@ ___
 - Implemented random events.
 - Moved previous README to the Living_Document directory.
 - Updated front page README to reflect the Alpha release description.
-- Recorded Demo Video for the Alpha release of the Colonization-Conquerors videogame.
+- Recorded Demo Video for the Alpha release of the Colonization-Conquerors video game.
 
 #### **Plans:**
 - Initiate player testing to look for bugs.
@@ -32,18 +32,21 @@ ___
     - Include a button in the UI that allows the user to return to the setup menu for starting a new game and another button for exiting the application.
     - Following the Alpha release, consider exploring the development of leaderboards for the game.
 - **Progress:**
-  - 
+  - Completed the Fort mechanics and fulfilled the designated tasks.
+  - Created a pause menu feature for the game.
 - **Plans:**
-  - 
+  - Examine the latest version for any potential bugs.
+  - Enhance the code, condense it, and improve its overall aesthetic.
+  - Explore the possibility of creating leaderboards for the game and incorporate any noteworthy mechanics.
 
 #
 #### **Grant Palmieri:**
 - **Goals:**
-  - Completion of School and Hospital-related mechanics.
-- **Progress:**
-  - Presented the logic for the mechanics related to Schools and Hospitals.
-- **Plans:**
   - Test the game before the Alpha release.
+- **Progress:**
+  - Conducted testing on the game prior to its Alpha release.
+- **Plans:**
+  - Evaluate the latest version and look for bugs.
 
 #
 #### **Joshua Murillo:**
@@ -63,8 +66,8 @@ ___
 #
 #### **Zachary Thomas:**
 - **Goals:**
-  - Completion of Housing-related mechanics.
-- **Progress:**
-  - Continued working on Housing-related mechanics.
-- **Plans:**
   - Prepare any more ideas for the Alpha release.
+- **Progress:**
+  - Joined group meeting for Alpha release.
+- **Plans:**
+  - Evaluate the latest version and look for bugs.
