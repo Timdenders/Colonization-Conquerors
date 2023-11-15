@@ -1,11 +1,11 @@
-# Colonization Conquerors
+<p align="center"><img src="images/title.png" width="400"></p>
 
 ## Repository Contents:
 - Source Code - Located in **Latest_build**: The heart of our project lies here, where we've meticulously crafted the game's functionality and mechanics.
 - Living Document: This document provides an overview of the project, team information, major features, stretch goals, use cases, non-functional requirements, and more. It serves as your guide to Colonization Conquerors.
 - Weekly Reports: Our weekly reports detail our progress and accomplishments, helping you stay up to date with our development journey.
 - Projects: The Projects page outlines our scheduled tasks, assignments, and responsibilities for each team member, offering insight into our project's ongoing development.
-- README: This top-level REAdME file contains an introduction to our project including, who it is for, how to run, test, and build the software, as well as the rules of the game.
+- README: This top-level README file contains an introduction to our project including, who it is for, how to run, test, and build the software, as well as the rules of the game.
 
 ### Product Description:
 Colonization Conquerors is set to be developed as a turn-based strategy PC game inspired by the classic Utopia (1982). The game revolves around building and creating a civilization, resource management, and competitive gameplay to win matches. It aims to blend the nostalgia of Utopia's core gameplay with different visuals, and user experience enhancements.
@@ -23,9 +23,9 @@ ___
 
 ___
 ### Use Case:
-Colonization Conquerors is a game for people who want to experience a strategy focused, island city building adventure where you compete against your opponent to see who can amass the most wealth and power!
+Colonization Conquerors is a game for people who want to experience a strategy-focused, island city-building adventure where you compete against your opponent to see who can amass the most wealth and power!
 
-#### Implimented Use Cases:
+#### Implemented Use Cases:
 | Use Case 1    | Player Building & Island Development |
 | -------- | ------- |
 | Actor | Player |
@@ -48,9 +48,9 @@ Colonization Conquerors is a game for people who want to experience a strategy f
 
 ___
 ### How to Run the Game:
-From GitHub, navigate this main page of the repository to the **Releases** link. From there you will find under **Assets** a folder called, **WindowsDesktop.zip** which can be downloaded to your machine. You can then extract the files from the zip folder which will contain an application called **Colonization_Conquerors_Game.exe**. Then, simply run the executable file to begin the game. 
+From GitHub, navigate this main page of the repository to the **Releases** link. From there you will find under **Assets** a folder called, **WindowsDesktop.zip** which can be downloaded to your machine. You can then extract the files from the zip folder which will contain an application called **ColonizationConquerors.exe**. Then, run the executable file to begin the game. 
 
-**NOTE** you may need to ask Windows to allow the game to run.
+**NOTE**: You may need to ask Windows to allow the game to run.
 
 ___
 ### How to Run the Project and Test Sweep:
@@ -112,7 +112,7 @@ Player Two
 - Fishing Boat: [
 
 Ship Control:
-- Move cursor over the boat, then use the F key (Player One) or J key (Player Two) to control fishing boats or PT boats. Press F or J to exit.
+- Move the cursor over the boat, then use the F key (Player One) or J key (Player Two) to control fishing boats or PT boats. Press F or J to exit.
 
 Interaction Mode:
 - Use the \ key to switch between Interaction modes. By default, the Interaction mode is set to Player One.
@@ -121,7 +121,7 @@ Interaction Mode:
 Pause Game:
 - To pause the game, press the ESC key.
   - Resume button - Resume the game.
-  - Retry button - Go back to Setup Menu.
+  - Retry button - Go back to the Setup Menu.
   - Exit button - Exit the application.
 
 **Game Objective:**
@@ -178,7 +178,7 @@ While you cannot exert control over it, you can endeavor to foresee and prepare 
 - PT boats can stop pirate ships by moving in front of them. Use a PT boat to protect a fishing boat in the harbor.
 - PT boats can ONLY be sunk by hurricanes or tropical storms (rare).
 - PT boats cannot fish.
-- You cannot control BOTH PT boat and fishing boat at the same time.
+- You cannot control BOTH a PT boat and a fishing boat at the same time.
 - Pirates can ONLY be sunk by hurricanes or tropical storms (rare).
 - Pirates can sink fishing boats by occupying the same space.
 
