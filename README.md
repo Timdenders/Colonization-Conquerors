@@ -70,7 +70,7 @@ Drag and drop the **Colonization-Conquerors** project folder into the empty spac
 
 ![Add_project](images/run_test_2.png)
 
-You will then be met with the open project. Take note of the GdUnit tab, gdUnitConsole, and test folders marked below:
+After double clicking the project, you will then be met with the open project in the editor. Take note of the GdUnit tab, gdUnitConsole, and test folders marked below:
 
 ![View_project](images/run_test_3.png)
 
