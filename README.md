@@ -64,9 +64,9 @@ After opening the editor, you will see a project manager open.
 
 ![Open_editor](images/run_test_1.png)
 
-After this, download the Godot project zip folder called **2023_11_15_Colonization-Conquerors.zip** from the root directory of this repository. Unzip the folder and you will find another folder called **Colonization-Conquerors**. This is the project folder that you will place into the Godot editor to access the internals of the project.
+After this, download the Godot project zip folder called **Colonization_Conquerors_Alpha_Build.zip** from the root directory of this repository. Unzip the folder and you will find another folder called **Colonization-Conquerors**. This is the project folder that you will place into the Godot editor to access the internals of the project.
 
-Drag and drop the **Colonization-Conquerors** project folder into the empty space shown below:
+Drag and drop the **Colonization_Conquerors_Alpha_Build** project folder into the empty space shown below:
 
 ![Add_project](images/run_test_2.png)
 
