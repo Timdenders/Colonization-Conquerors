@@ -6,7 +6,7 @@
 - Projects: The Projects page outlines our scheduled tasks, assignments, and responsibilities for each team member, offering insight into our project's ongoing development.
 ___
 ## Overview:
-An ongoing project aimed at developing a game that replicates the gameplay of the classic 1982 game, Utopia.
+A completed project focused on the development of a game that replicates the gameplay of the classic 1982 game, Utopia.
 
 ### Team Members:
 - Timothy Enders (Game Programmer, Game Designer)
@@ -212,9 +212,9 @@ ___
 | 10/15/23 - 10/21/23 | ~~Completion of prototype, begin development of beta~~ |
 | 10/22/23 - 10/28/23 | ~~Finalization of mechanics~~ |
 | 10/29/23 - 11/4/23 | ~~Completion of prototype, begin development of beta <br> Finalization of GUI, in-game sprites, and mechanics~~ |
-| 11/5/23 - 11/13/23 | Completion of prototype, begin development of beta <br> Finalization of everything <br> Work on extra features (Leaderboards/Discord integration) |
-| 11/14/23 - 11/18/23 | Continue working on extra features |
-| 11/19/23 - 11/25/23 | Continue working on extra features <br> Finalization of documentation |
+| 11/5/23 - 11/13/23 | Completion of prototype, begin development of beta <br> Finalization of everything <br> ~~Work on extra features (Leaderboards/Discord integration)~~ |
+| 11/14/23 - 11/18/23 | ~~Continue working on extra features~~ |
+| 11/19/23 - 11/25/23 | ~~Continue working on extra features~~ <br> Finalization of documentation |
 | 11/26/23 - 12/2/23 | Finalization of Colonization Conquerors |
 ___
 ### **Major Milestones**
@@ -234,7 +234,7 @@ Creation of the Colonization Conquerors Prototype:
   - Objects like the Fishing boat or PT boat should be selectable and moveable throughout the live game.
 - Have objects interact with the users:
   - When users purchase a rebel object, it will randomly spawn on the opponent's land mass.
-    - Rebels lower the productivity of the opponent's currency production and may damage the opponent's in-game objects if they are in range.
+    - Rebels lower island space, preventing more objects from being put on it.
   - Weather events may spawn randomly and interact with the user's in-game objects.
     - Rain helping crops grow.
     - Storms and hurricanes damaging player objects.
