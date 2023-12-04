@@ -46,6 +46,16 @@ Colonization Conquerors is a game for people who want to experience a strategy-f
 | Extensions/Variations <br />of the Success Scenario | Player 1 and Player 2 can employ different tactics <br />during gameplay. |
 | Exceptions: Failure <br />Conditions & Scenarios | If the session ends too early, they cannot engage in <br />competitive gameplay. |
 
+| Use Case 3    | Dealing with Random Natural Disasters |
+| -------- | ------- |
+| Actor | Player |
+| Trigger | The player encounters a random storm cloud in the game. |
+| Preconditions | The player initiates a new game. |
+| Postconditions <br />(Success Scenario) | The player copes with the natural disaster. |
+| List of Steps <br />(Success Scenario) | a. The player observes the impending storm cloud. <br />b. The player can either opt to move their boat to a different <br />location and/or proactively construct newer structures in a <br />distant area to avoid potential obstacles.|
+| Extensions/Variations <br />of the Success Scenario | The outcome of the natural disaster can vary based on <br />the player’s preparations. |
+| Exceptions: Failure <br />Conditions & Scenarios | Failure to act may result in a natural disaster <br />inflicting substantial damage upon the player’s <br />constructions. |
+
 ___
 ### How to Run the Game:
 From GitHub, navigate this main page of the repository to the **Releases** link. From there you will find under **Assets** a folder called, **WindowsDesktop.zip** which can be downloaded to your machine. You can then extract the files from the zip folder which will contain an application called **ColonizationConquerors.exe**. Then, run the executable file to begin the game. 
@@ -70,7 +80,7 @@ Drag and drop the **Colonization_Conquerors_Alpha_Build** project folder into th
 
 ![Add_project](images/run_test_2.png)
 
-After double clicking the project, you will then be met with the open project in the editor. Take note of the GdUnit tab, gdUnitConsole, and test folders marked below:
+After double-clicking the project, you will then be met with the open project in the editor. Take note of the GdUnit tab, gdUnitConsole, and test folders marked below:
 
 ![View_project](images/run_test_3.png)
 
