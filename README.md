@@ -91,6 +91,9 @@ After selecting the two gdUnit tabs, if you navigate the test directory into Scr
 As you can see, the tests located in that testing script were run and successfully completed:
 
 ![Run_test](images/run_test_5.png)
+
+After verifying that the tests run correctly, you can now run the game by either pressing **F5** or by pressing the **play** button at the top-right of the engine ribbon to play the project code.
+
 ___
 ### How to Play:
 **Controls**
@@ -190,3 +193,33 @@ While you cannot exert control over it, you can endeavor to foresee and prepare 
 - Establish housing early, then consider building a factory.
 - Build hospitals strategically to balance productivity and population growth.
 - Exercise caution with crops due to their dependence on rain and the need for replanting.
+
+
+___
+### Development Feedback:
+
+Near the end of this project's development, our team participated in a few rounds of peer review with other teams who were developing their own software. The following list shown below are their criticisms:
+
+- User manual did not accurately reflect how to run the game.
+- User manual should be updated to reflect a clearer objective for the game
+- Game startup screen lacks clarity
+- The game lacks Mac support
+
+To address these criticisms our team has invoked the following:
+
+**The user manual did not accurately reflect how to run the game.**
+
+- To address this issue, our team has updated the Top-Level README of this repository to be more specific with run instructions.
+
+**The user manual should be updated to reflect a clearer objective for the game**
+
+- Similarly to the first issue, our team has updated the Top-Level README of this repository to provide a clearer objective for the game
+
+**Game startup screen lacks clarity**
+
+- Our team has updated the startup screen to be slightly more descriptive of what the user inputs should contain.
+
+**The game lacks Mac support**
+
+- Our team developed this project on Windows operating systems for Windows operating systems. We also added support for a Linux release due to curiosity and the ease of doing so. Since Mac OS was not our intended release platform, nor do any of our team members even own a Mac machine to test on. As a result, we will not be adding Mac support for this project.
+
