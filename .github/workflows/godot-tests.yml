@@ -5,7 +5,7 @@ on:
   push:
     branches: ['main']
     paths: 
-      - 'Latest_build/**'
+      - 'LatestBuild/**'
   workflow_dispatch:
 
 concurrency:
@@ -51,7 +51,7 @@ jobs:
           chmod u+x $GODOT_BIN
           echo "GODOT_HOME=$GODOT_HOME" >> "$GITHUB_ENV"
           echo "GODOT_BIN=$GODOT_BIN" >> "$GITHUB_ENV"
-        working-directory: ./Latest_build
+        working-directory: ./LatestBuild
 
       # We need to update the project before running tests, Godot has actually issues with loading the plugin
       - name: "Update Project"
@@ -61,7 +61,7 @@ jobs:
         shell: bash
         run: |
           ${{ env.GODOT_BIN }} -e --path . -s res://addons/gdUnit4/bin/ProjectScanner.gd --headless --audio-driver Dummy
-        working-directory: ./Latest_build
+        working-directory: ./LatestBuild
 
       - name: "Run Unit Tests"
         if: ${{ !cancelled() }}
@@ -72,7 +72,7 @@ jobs:
         run: |
           chmod +x ./addons/gdUnit4/runtest.sh
           xvfb-run --auto-servernum ./addons/gdUnit4/runtest.sh --add "res://test" --audio-driver Dummy --display-driver x11 --rendering-driver opengl3 --screen 0 --continue
-        working-directory: ./Latest_build
+        working-directory: ./LatestBuild
 
       - name: "Publish Test Report"
         if: ${{ always() }}
@@ -82,7 +82,7 @@ jobs:
           path: "reports/**/results.xml"
           reporter: java-junit
           fail-on-error: 'false'
-          working-directory: ./Latest_build
+          working-directory: ./LatestBuild
 
       - name: "Upload Unit Test Reports"
         if: ${{ always() }}
@@ -93,7 +93,7 @@ jobs:
             reports/**
             /var/lib/systemd/coredump/**
             /var/log/syslog
-          working-directory: ./Latest_build
+          working-directory: ./LatestBuild
 
   finalize:
     if: ${{ !cancelled() }}
@@ -107,4 +107,4 @@ jobs:
               contains(needs.*.result, 'failure')
             || contains(needs.*.result, 'cancelled')
           }}
-        working-directory: ./Latest_build
+        working-directory: ./LatestBuild
