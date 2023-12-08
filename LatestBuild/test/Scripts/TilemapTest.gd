@@ -17,3 +17,13 @@ func test_check_for_alt_tile() -> void:
 func test_check_for_alt_tile_true() -> void:
 	var alt_tile = tilemap.get_cell_alternative_tile(ground_sea_layer, Vector2i(-19, 13))
 	assert_that(alt_tile).is_not_equal(0)
+
+func test_alter_gold_bars_true() -> void:
+	var check = false
+	var gold = 100
+	var new_gold = tilemap.alter_gold_bars(gold, "Fort")
+	if new_gold < gold:
+		check = true
+	else:
+		check = false
+	assert_that(check).is_not_equal(false)
