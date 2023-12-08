@@ -1,7 +1,0 @@
-res://Interface/World.tscn
-res://Themes/ob_button.tres
-res://Themes/po_confirmation_dialog.tres
-res://Themes/pm_button.tres
-res://Scripts/Tilemap.gd
-res://Interface/Setup_Menu.tscn
-res://Scripts/Global.gd
